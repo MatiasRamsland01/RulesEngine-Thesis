@@ -26,7 +26,7 @@ namespace Bouvet.CV.Service.IntegrationTests {
     [Fact]
     public async Task ShouldBePossibleToGetACV() {
       var cvId = "test@test.com";
-      var result = await _client.GetAsync($"api/getcv?email={cvId}");
+      var result = await _client.GetAsync($"api/v0/getcv?email={cvId}");
       result.Should().NotBeNull();
     }
   }

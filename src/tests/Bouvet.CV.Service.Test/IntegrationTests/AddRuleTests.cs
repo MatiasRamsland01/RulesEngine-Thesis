@@ -28,7 +28,7 @@ namespace Bouvet.CV.Service.IntegrationTests {
       var fixture = new Fixture();
       var rule = RuleEngineFactory.CreateRule(fixture.Create("RuleName"), fixture.Create("SuccessEvent"), fixture.Create("ErrorNullRuleViolated"), "input != null", "AND");
       var contract = new AddRuleCommandContract(rule);
-      var result = await _client.PostAsync("api/addrule", new StringContent(JsonSerializer.Serialize(contract), Encoding.UTF8, "application/json"));
+      var result = await _client.PostAsync("api/v0/addrule", new StringContent(JsonSerializer.Serialize(contract), Encoding.UTF8, "application/json"));
       // Arrange
       using (var scope = _factory.Services.CreateScope()) {
         var scopedServices = scope.ServiceProvider;
@@ -43,7 +43,7 @@ namespace Bouvet.CV.Service.IntegrationTests {
       var rule = RuleEngineFactory.CreateRule(fixture.Create("RuleName"), fixture.Create("SuccessEvent"), fixture.Create("ErrorNullRuleViolated"), "input != null", "AND");
       rule.Data.RuleName.Value = "#¤%&/()";
       var contract = new AddRuleCommandContract(rule);
-      var result = await _client.PostAsync("api/addrule", new StringContent(JsonSerializer.Serialize(contract), Encoding.UTF8, "application/json"));
+      var result = await _client.PostAsync("api/v0/addrule", new StringContent(JsonSerializer.Serialize(contract), Encoding.UTF8, "application/json"));
       // Arrange
       result.StatusCode.Should().Be(HttpStatusCode.BadRequest);
       var content = await result.Content.ReadAsStringAsync();

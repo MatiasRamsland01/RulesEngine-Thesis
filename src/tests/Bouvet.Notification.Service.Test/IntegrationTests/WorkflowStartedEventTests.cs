@@ -26,7 +26,7 @@ namespace Bouvet.Notification.Servicw.Test.IntegrationTests {
       using var client = application.CreateClient();
       var @event = new WorkflowStartedEvent(FieldsFactory.IdField(Guid.NewGuid()), FieldsFactory.DateField(DateTime.Now.ToShortDateString()), FieldsFactory.IdField(Guid.NewGuid()));
       // Act
-      var result = await client.PostAsync("api/WorkflowStartedEvent", new StringContent(JsonConvert.SerializeObject(@event), Encoding.UTF8, "application/json"));
+      var result = await client.PostAsync("api/v0/WorkflowStartedEvent", new StringContent(JsonConvert.SerializeObject(@event), Encoding.UTF8, "application/json"));
       // Assert
       mediatr.Verify(m => m.Publish(It.IsAny<WorkflowStartedEvent>(), It.IsAny<CancellationToken>()), Times.Once);
       result.StatusCode.Should().Be(HttpStatusCode.OK);

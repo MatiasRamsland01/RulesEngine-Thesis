@@ -36,7 +36,7 @@ namespace Bouvet.CV.Service.IntegrationTests {
         var db = scopedServices.GetRequiredService<RuleengineContext>();
         await db.AddAsync(rule);
         await db.SaveChangesAsync();
-        var result = await _client.GetAsync($"api/getrule?ruleName={rule.Data.RuleName.Value}");
+        var result = await _client.GetAsync($"api/v0/getrule?ruleName={rule.Data.RuleName.Value}");
         result.StatusCode.Should().Be(HttpStatusCode.OK);
         var content = await result.Content.ReadAsStringAsync();
 
@@ -55,7 +55,7 @@ namespace Bouvet.CV.Service.IntegrationTests {
     [Fact]
     public async Task ShouldNotBePossibleToGetARuleThatDoesNotExsist() {
       var ruleName = "NotExsistingRuleName";
-      var result = await _client.GetAsync($"api/getrule?ruleName={ruleName}");
+      var result = await _client.GetAsync($"api/v0/getrule?ruleName={ruleName}");
       result.StatusCode.Should().Be(HttpStatusCode.BadRequest);
     }
   }

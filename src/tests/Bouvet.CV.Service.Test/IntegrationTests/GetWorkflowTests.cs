@@ -36,7 +36,7 @@ namespace Bouvet.CV.Service.IntegrationTests {
         var db = scopedServices.GetRequiredService<RuleengineContext>();
         db.Add(workflow);
         db.SaveChanges();
-        var result = await _client.GetAsync($"api/getworkflow?workflowName={workflow.WorkflowName.Value}");
+        var result = await _client.GetAsync($"api/v0/getworkflow?workflowName={workflow.WorkflowName.Value}");
         result.StatusCode.Should().Be(HttpStatusCode.OK);
         var content = await result.Content.ReadAsStringAsync();
         var jsonSerializerOptions = new JsonSerializerOptions {
@@ -51,7 +51,7 @@ namespace Bouvet.CV.Service.IntegrationTests {
     [Fact]
     public async Task ShouldNotBePossibleToGetAnInvalidWorkflow() {
       var workflowName = "NotExsistingWorkflow";
-      var result = await _client.GetAsync($"api/getworkflow?workflowname={workflowName}");
+      var result = await _client.GetAsync($"api/v0/getworkflow?workflowname={workflowName}");
       result.StatusCode.Should().Be(HttpStatusCode.BadRequest);
     }
   }
