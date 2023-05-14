@@ -1,0 +1,631 @@
+{
+    "_id": "60c0a2c706f9be0fd25a5193",
+    "born_day": 1,
+    "born_month": 1,
+    "born_year": 198,
+    "bruker_id": "60c0a2c706f9be0fd25a5192",
+    "created_at": "2021-06-09T11:15:19.513Z",
+    "custom_tag_ids": [
+        "63f22c01cfc8850fcd0537cb"
+    ],
+    "default": true,
+    "name_multilang": {},
+    "nationality": {
+        "no": "Norsk",
+        "int": ""
+    },
+    "navn": "Ola Nordmann",
+    "owner_updated_at": "2020-03-28T13:47:11.000Z",
+    "owner_updated_at_significant": "2021-10-03T13:45:41.000Z",
+    "place_of_residence": {
+        "no": "Test",
+        "int": ""
+    },
+    "telefon": "\\u002B4799790167",
+    "title": {
+        "no": "Avdelingsleder arkitektur",
+        "int": ""
+    },
+    "twitter": "testtwitter",
+    "updated_at": "2023-03-28T13:47:10.675Z",
+    "version": 8,
+    "name": "Ola Nordmann",
+    "user_id": "60c0a2c706f9be0fd25a5192",
+    "company_id": "4f460a2de8ee2a74be000001",
+    "external_unique_id": "3958",
+    "email": "Ola.Nordmannbouvet.no",
+    "country_code": "no",
+    "language_code": "no",
+    "language_codes": [
+        "no",
+        "int",
+        "se"
+    ],
+    "updated_ago": "N/A",
+    "template_document_type": "doc",
+    "default_word_template_id": "5a58b7d47da82e0ea9f3801b",
+    "default_ppt_template_id": "62b4282e9a34e01002f26e72",
+    "image": {
+        "url": null,
+        "thumb": {
+            "url": null
+        },
+        "fit_thumb": {
+            "url": null
+        },
+        "large": {
+            "url": null
+        },
+        "small_thumb": {
+            "url": null
+        }
+    },
+    "technologies": [
+        {
+            "_id": "6297efe110c1980feed01505",
+            "category": {},
+            "created_at": "2022-06-01T23:01:53.552Z",
+            "disabled": true,
+            "diverged_from_master": false,
+            "exclude_tags": [],
+            "external_unique_id": null,
+            "modifier_id": null,
+            "order": 0,
+            "origin_id": null,
+            "owner_updated_at": "2022-08-04T09:41:30.000Z",
+            "recently_added": false,
+            "starred": false,
+            "technology_skills": [
+                {
+                    "_id": "62e7b175e746c71072cb929d",
+                    "base_duration_in_years": 1,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 1,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Teamarbeid"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 1
+                },
+                {
+                    "_id": "62e7b6f5e9604b102486da42",
+                    "base_duration_in_years": 1,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 2,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "PyQt"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 1
+                },
+                {
+                    "_id": "62eb8c8206e4541003228b4a",
+                    "base_duration_in_years": 1,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 3,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "PyGame"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 1
+                },
+                {
+                    "_id": "62eb8c8e6a53190fa569dc57",
+                    "base_duration_in_years": 1,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 4,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "TCP"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 1
+                },
+                {
+                    "_id": "62eb8cc8d810bb10015448a0",
+                    "base_duration_in_years": 1,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 5,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "MJPEG"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 1
+                },
+                {
+                    "_id": "62eb943b53b73e0ff74e7581",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 6,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Teamwork"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                }
+            ],
+            "uncategorized": true,
+            "updated_at": "2023-01-31T10:48:19.577Z",
+            "version": 3
+        },
+        {
+            "_id": "62e7b158e746c710a1cb92a5",
+            "category": {
+                "no": "Programmeringsspråk",
+                "int": "Programming languages",
+                "se": "Programmeringsspråk"
+            },
+            "created_at": "2022-08-01T10:56:24.262Z",
+            "disabled": false,
+            "diverged_from_master": false,
+            "exclude_tags": [],
+            "external_unique_id": null,
+            "modifier_id": null,
+            "order": 2,
+            "origin_id": null,
+            "owner_updated_at": "2023-01-31T10:36:02.000Z",
+            "recently_added": false,
+            "starred": false,
+            "technology_skills": [
+                {
+                    "_id": "62e7b158e746c70fe8cb9340",
+                    "base_duration_in_years": 1,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 1,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Python",
+                        "int": "Python",
+                        "se": "Python"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 1
+                },
+                {
+                    "_id": "62e7b66c24a50610541d0d96",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 2,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "JavaScript",
+                        "int": "JavaScript",
+                        "se": "JavaScript"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                },
+                {
+                    "_id": "62e7b6a9e746c7100ecb9516",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 3,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "C#",
+                        "int": "C#",
+                        "se": "C#"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                },
+                {
+                    "_id": "62e8dced124413102e911c97",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 5,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Matlab",
+                        "int": "Matlab",
+                        "se": "Matlab"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                },
+                {
+                    "_id": "63295de5251e880f83b61c09",
+                    "base_duration_in_years": 1,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 6,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "TypeScript",
+                        "int": "TypeScript",
+                        "se": "TypeScript"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 2
+                }
+            ],
+            "uncategorized": false,
+            "updated_at": "2023-01-31T10:48:19.587Z",
+            "version": 3
+        },
+        {
+            "_id": "62e7b15de746c7100dcb9282",
+            "category": {
+                "no": "Rammeverk og standarder",
+                "int": "Frameworks and standards",
+                "se": "Ramverk och standarder"
+            },
+            "created_at": "2022-08-01T10:56:29.439Z",
+            "disabled": false,
+            "diverged_from_master": false,
+            "exclude_tags": [],
+            "external_unique_id": null,
+            "modifier_id": null,
+            "order": 3,
+            "origin_id": null,
+            "owner_updated_at": "2022-08-04T09:09:19.000Z",
+            "recently_added": false,
+            "starred": false,
+            "technology_skills": [
+                {
+                    "_id": "62e7b15ee9604b102f86d9de",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 1,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Qt",
+                        "int": "Qt",
+                        "se": "Qt"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                },
+                {
+                    "_id": "62e7b6ac6ac3bf1006036c45",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 0,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": ".NET",
+                        "int": ".NET",
+                        "se": ".NET"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                },
+                {
+                    "_id": "62e7c1f024a506103d1d0ccd",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 2,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Flask",
+                        "int": "Flask",
+                        "se": "Flask"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                },
+                {
+                    "_id": "62eb8cbe06e4541014228b8d",
+                    "base_duration_in_years": 1,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 3,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "JSON",
+                        "int": "JSON",
+                        "se": "JSON"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 1
+                }
+            ],
+            "uncategorized": false,
+            "updated_at": "2023-01-31T10:48:19.597Z",
+            "version": 3
+        },
+        {
+            "_id": "62e7b16a24a5060ffb1d0dbf",
+            "category": {
+                "no": "Kildekontroll, bygg og deploy",
+                "int": "Source control, build and deployment",
+                "se": "Versionshantera, bygga och produktionssätta"
+            },
+            "created_at": "2022-08-01T10:56:42.926Z",
+            "disabled": false,
+            "diverged_from_master": false,
+            "exclude_tags": [],
+            "external_unique_id": null,
+            "modifier_id": null,
+            "order": 4,
+            "origin_id": null,
+            "owner_updated_at": "2022-08-02T08:12:10.000Z",
+            "recently_added": false,
+            "starred": false,
+            "technology_skills": [
+                {
+                    "_id": "62e7b16b6ac3bf0ffe036c88",
+                    "base_duration_in_years": 1,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 1,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Git",
+                        "int": "Git",
+                        "se": "Git"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 1
+                },
+                {
+                    "_id": "62e8dc5a1244130fd2911c66",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 2,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "GitHub",
+                        "int": "GitHub",
+                        "se": "GitHub"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                }
+            ],
+            "uncategorized": false,
+            "updated_at": "2023-01-31T10:48:19.605Z",
+            "version": 3
+        },
+        {
+            "_id": "62e7b62ce746c7103ecb9555",
+            "category": {
+                "no": "Front-end",
+                "int": "Front end",
+                "se": "Front-end"
+            },
+            "created_at": "2022-08-01T11:17:00.348Z",
+            "disabled": false,
+            "diverged_from_master": false,
+            "exclude_tags": [],
+            "external_unique_id": null,
+            "modifier_id": null,
+            "order": 1,
+            "origin_id": null,
+            "owner_updated_at": "2023-01-31T10:36:02.000Z",
+            "recently_added": false,
+            "starred": false,
+            "technology_skills": [
+                {
+                    "_id": "62e7b664f6b71b0ff52d5db7",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 2,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Vue.js"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                },
+                {
+                    "_id": "62e7b6cf6ac3bf1006036c4e",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 3,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "HTML",
+                        "int": "HTML",
+                        "se": "HTML"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                },
+                {
+                    "_id": "62e7b6d2e9604b104186d991",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 4,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "CSS",
+                        "int": "CSS",
+                        "se": "CSS"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                },
+                {
+                    "_id": "63295de3b4444f0f8d851f1a",
+                    "base_duration_in_years": 1,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 5,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "React",
+                        "int": "React",
+                        "se": "React"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 2
+                }
+            ],
+            "uncategorized": false,
+            "updated_at": "2023-01-31T10:48:19.613Z",
+            "version": 7
+        },
+        {
+            "_id": "62e7b6b46ac3bf1007036fbc",
+            "category": {
+                "no": "Verktøy",
+                "int": "Tools",
+                "se": "Verktyg"
+            },
+            "created_at": "2022-08-01T11:19:16.264Z",
+            "disabled": false,
+            "diverged_from_master": false,
+            "exclude_tags": [],
+            "external_unique_id": null,
+            "modifier_id": null,
+            "order": 5,
+            "origin_id": null,
+            "owner_updated_at": "2022-08-02T07:59:18.000Z",
+            "recently_added": false,
+            "starred": false,
+            "technology_skills": [
+                {
+                    "_id": "62e7b6b5e9604b106086dbd9",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 1,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Figma",
+                        "int": "Figma",
+                        "se": "Figma"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                },
+                {
+                    "_id": "62e7c1da6ac3bf1008036d32",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 2,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Visual Studio Code",
+                        "int": "Visual Studio Code",
+                        "se": "Visual Studio Code"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                }
+            ],
+            "uncategorized": false,
+            "updated_at": "2022-08-02T07:59:18.018Z",
+            "version": 2
+        },
+        {
+            "_id": "62e7bc5c6ac3bf0ffe036d79",
+            "category": {
+                "no": "Database og databaseverktøy",
+                "int": "Database and database tools",
+                "se": "Databas och databasverktyg"
+            },
+            "created_at": "2022-08-01T11:43:24.810Z",
+            "disabled": false,
+            "diverged_from_master": false,
+            "exclude_tags": [],
+            "external_unique_id": null,
+            "modifier_id": null,
+            "order": 6,
+            "origin_id": null,
+            "owner_updated_at": "2022-08-02T07:59:15.000Z",
+            "recently_added": false,
+            "starred": false,
+            "technology_skills": [
+                {
+                    "_id": "62e7bc5de746c7100ecb95cb",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 1,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "SQLite",
+                        "int": "SQLite",
+                        "se": "SQLite"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                },
+                {
+                    "_id": "62e7c20de9604b106086dce1",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 2,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "SQL",
+                        "int": "SQL",
+                        "se": "SQL"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                }
+            ],
+            "uncategorized": false,
+            "updated_at": "2022-08-02T07:59:15.254Z",
+            "version": 2
+        },
+        {
+            "_id": "62eb8cd8d810bb0ffe544a6c",
+            "category": {
+                "no": "Operativsystem og infrastruktur",
+                "int": "Operating system and infrastructure",
+                "se": "Operativsystem och infrastruktur"
+            },
+            "created_at": "2022-08-04T09:09:44.493Z",
+            "disabled": true,
+            "diverged_from_master": false,
+            "exclude_tags": [],
+            "external_unique_id": null,
+            "modifier_id": null,
+            "order": 7,
+            "origin_id": null,
+            "owner_updated_at": "2022-08-04T09:09:46.000Z",
+            "recently_added": false,
+            "starred": false,
+            "technology_skills": [
+                {
+                    "_id": "62eb8cd906e45410e4228c7b",
+                    "base_duration_in_years": 1,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 1,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "SSH",
+                        "int": "SSH",
+                        "se": "SSH"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 1
+                }
+            ],
+            "uncategorized": false,
+            "updated_at": "2023-01-31T10:48:19.619Z",
+            "version": 2
+        }
+    ],
+    "work_experiences": [],
+    "key_qualifications": []
+}

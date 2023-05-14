@@ -1,0 +1,13 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: prometheus-exporter
+  namespace: ruleengine
+spec:
+  type: middleware.http.prometheus
+  version: v1
+  metadata:
+    - name: enabled
+      value: "true"
+    - name: address
+      value: "prometheus:9090"

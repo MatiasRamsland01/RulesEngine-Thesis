@@ -1,0 +1,19 @@
+global:
+  scrape_interval: 5s
+  evaluation_interval: 5s
+
+scrape_configs:
+  - job_name: "dapr"
+    metrics_path: "/v1.0/metadata"
+    static_configs:
+      - targets:
+          - "bouvet-rule-engine-service:9090"
+          - "bouvet-cv-service:9090"
+          - "bouvet-notification-service:9090"
+  - job_name: "Custom-Metrics"
+    metrics_path: "/metrics"
+    static_configs:
+      - targets:
+          - "bouvet-rule-engine-service:80"
+          - "bouvet-cv-service:80"
+          - "bouvet-notification-service:80"

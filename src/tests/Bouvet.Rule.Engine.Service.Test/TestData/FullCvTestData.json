@@ -1,0 +1,652 @@
+{
+  "_id": "60c0a2c706f9be0fd25a5193",
+  "born_day": 1,
+  "born_month": 1,
+  "born_year": 1982,
+  "bruker_id": "60c0a2c706f9be0fd25a5192",
+  "created_at": "2021-06-09T11:15:19.513Z",
+  "custom_tag_ids": ["63f22c01cfc8850fcd0537cb"],
+  "default": true,
+  "name_multilang": {},
+  "nationality": { "no": "Norsk", "int": "" },
+  "navn": "Ola Nordmann",
+  "owner_updated_at": "2022-03-28T13:47:11.000Z",
+  "owner_updated_at_significant": "2021-10-03T13:45:41.000Z",
+  "place_of_residence": { "no": "Test", "int": "" },
+  "technologies": [
+    {
+      "_id": "60c0a2c706f9be0fd25a5194",
+      "category": {},
+      "created_at": "2021-06-09T11:15:19.499Z",
+      "disabled": true,
+      "diverged_from_master": false,
+      "exclude_tags": [],
+      "owner_updated_at": "2021-10-03T12:54:51.000Z",
+      "recently_added": false,
+      "starred": false,
+      "uncategorized": true,
+      "updated_at": "2021-10-03T12:54:51.293Z",
+      "version": 2,
+      "technology_skills": [
+        {
+          "_id": "6159a282fe5a0e11107b554f",
+          "base_duration_in_years": 0,
+          "modifier_id": null,
+          "offset_duration_in_years": 0,
+          "order": 1,
+          "proficiency": 0,
+          "tags": { "no": "informasjonsmodellering" },
+          "total_duration_in_years": 0,
+          "version": 1
+        }
+      ]
+    },
+    {
+      "_id": "6159a2817a8a4c114eee0173",
+      "category": {
+        "no": "\\u00D8vrig kompetanse",
+        "int": "Other competencies",
+        "se": "\\u00D6vrig kompetens"
+      },
+      "created_at": "2021-10-03T12:30:57.783Z",
+      "disabled": true,
+      "diverged_from_master": false,
+      "exclude_tags": [],
+      "order": 1,
+      "owner_updated_at": "2021-10-03T12:54:53.000Z",
+      "recently_added": false,
+      "starred": false,
+      "uncategorized": false,
+      "updated_at": "2021-10-03T12:54:53.822Z",
+      "version": 1,
+      "technology_skills": [
+        {
+          "_id": "6159a28212b052115676d7ca",
+          "base_duration_in_years": 0,
+          "modifier_id": null,
+          "offset_duration_in_years": 0,
+          "order": 1,
+          "proficiency": 0,
+          "tags": {
+            "no": "Informasjonsarkitektur",
+            "int": "Information architecture",
+            "se": "Informationsarkitektur"
+          },
+          "total_duration_in_years": 0,
+          "version": 1
+        }
+      ]
+    },
+    {
+      "_id": "6159a7cb12b052116576d7d8",
+      "category": { "no": "Metoder", "int": "Methods", "se": "Metoder" },
+      "created_at": "2021-10-03T12:53:31.762Z",
+      "disabled": true,
+      "diverged_from_master": false,
+      "exclude_tags": [],
+      "order": 2,
+      "owner_updated_at": "2021-10-03T12:53:47.000Z",
+      "recently_added": false,
+      "starred": false,
+      "uncategorized": false,
+      "updated_at": "2021-10-03T12:53:47.080Z",
+      "version": 1,
+      "technology_skills": [
+        {
+          "_id": "6159a7ccfe5a0e113d7b56ca",
+          "base_duration_in_years": 0,
+          "modifier_id": null,
+          "offset_duration_in_years": 0,
+          "order": 1,
+          "proficiency": 0,
+          "tags": {
+            "no": "Smidig utvikling",
+            "int": "Agile development",
+            "se": "Agil utveckling"
+          },
+          "total_duration_in_years": 0,
+          "version": 1
+        }
+      ]
+    },
+    {
+      "_id": "63111091074aec3704f7ca24",
+      "category": {
+        "int": "Design and insight",
+        "no": "Design og innsikt",
+        "se": "Design og insikt"
+      },
+      "created_at": "2022-09-01T20:05:37.718Z",
+      "disabled": false,
+      "diverged_from_master": false,
+      "exclude_tags": [],
+      "recently_added": false,
+      "starred": false,
+      "uncategorized": false,
+      "updated_at": "2022-09-01T20:05:38.048Z",
+      "version": 1,
+      "technology_skills": [
+        {
+          "_id": "63111092074aec3704f7ca26",
+          "base_duration_in_years": 0,
+          "modifier_id": null,
+          "offset_duration_in_years": 0,
+          "order": 2,
+          "proficiency": 0,
+          "tags": {
+            "no": "Tjenestedesign",
+            "se": "Tj\\u00E4nstedesign",
+            "int": "Service design"
+          },
+          "total_duration_in_years": 0,
+          "version": null
+        }
+      ]
+    }
+  ],
+  "telefon": "\\u002B4799790167",
+  "title": { "no": "Avdelingsleder arkitektur", "int": "" },
+  "twitter": "testtwitter",
+  "updated_at": "2023-03-28T13:47:10.675Z",
+  "version": 8,
+  "name": "Ola Nordmann",
+  "user_id": "60c0a2c706f9be0fd25a5192",
+  "company_id": "4f460a2de8ee2a74be000001",
+  "external_unique_id": "3958",
+  "email": "Ola.Nordmann@bouvet.no",
+  "country_code": "no",
+  "language_code": "no",
+  "language_codes": ["no", "int", "se"],
+  "custom_tags": [
+    {
+      "_id": "63f22c01cfc8850fcd0537cb",
+      "id": "63f22c01cfc8850fcd0537cb",
+      "values": { "no": "\\u00D8st R\\u00E5dgivning arkitektur" },
+      "external_unique_id": "516",
+      "custom_tag_category_id": "57dfc35869702d6a8d00090b",
+      "category_ids": ["57dfc35869702d6a8d00090b"],
+      "custom_tag_category": {
+        "_id": "57dfc35869702d6a8d00090b",
+        "id": "57dfc35869702d6a8d00090b",
+        "values": {
+          "no": "Avdeling",
+          "int": "Department",
+          "se": "Avdelning"
+        },
+        "external_unique_id": "department",
+        "can_be_used_for_cvs": true,
+        "can_be_used_for_references": true,
+        "can_be_used_for_customers": true,
+        "allow_filtering": true
+      }
+    }
+  ],
+  "updated_ago": "N/A",
+  "template_document_type": "doc",
+  "default_word_template_id": "5a58b7d47da82e0ea9f3801b",
+  "default_ppt_template_id": "62b4282e9a34e01002f26e72",
+  "project_experiences": [
+    {
+      "_id": "6159a3f47a8a4c1154ee0188",
+      "area_amt": null,
+      "area_unit": null,
+      "created_at": "2021-10-03T12:37:08.264Z",
+      "customer": { "no": "Difi", "int": "Difi" },
+      "customer_anonymized": {},
+      "customer_description": {},
+      "customer_selected": "customer",
+      "customer_value_proposition": {},
+      "description": {
+        "no": "Rammeverk for informasjonsforvaltning",
+        "int": ""
+      },
+      "disabled": false,
+      "diverged_from_master": false,
+      "exclude_tags": [],
+      "expected_roll_off_date": null,
+      "extent_hours": null,
+      "external_unique_id": null,
+      "industry": { "no": "DevOps forvaltning", "int": "" },
+      "location_country_code": null,
+      "long_description": {
+        "no": "Prosjekt/programleder for utviklingen av Rammeverket for secure applications",
+        "int": ""
+      },
+      "modifier_id": null,
+      "month_from": "",
+      "month_to": "",
+      "order": 5,
+      "origin_id": null,
+      "owner_updated_at": "2021-10-03T12:38:02.000Z",
+      "percent_allocated": null,
+      "project_extent_amt": null,
+      "project_extent_currency": null,
+      "project_extent_hours": null,
+      "project_type": {},
+      "recently_added": false,
+      "related_work_experience_id": null,
+      "starred": false,
+      "total_extent_amt": null,
+      "total_extent_currency": null,
+      "total_extent_hours": null,
+      "updated_at": "2023-01-02T09:22:57.714Z",
+      "version": 24,
+      "year_from": "2015",
+      "year_to": "2020",
+      "roles": [],
+      "images": []
+    },
+    {
+      "_id": "6159a42fbd33091121e4326e",
+      "area_amt": null,
+      "area_unit": null,
+      "created_at": "2021-10-03T12:38:07.804Z",
+      "customer": { "no": "Test kommune", "int": "Test kommune" },
+      "customer_anonymized": {},
+      "customer_description": {},
+      "customer_selected": "customer",
+      "customer_value_proposition": {},
+      "description": {
+        "no": "Teamleder testportef\\u00F8ljen pandemi",
+        "int": ""
+      },
+      "disabled": false,
+      "diverged_from_master": false,
+      "exclude_tags": [],
+      "expected_roll_off_date": null,
+      "extent_hours": null,
+      "external_unique_id": null,
+      "industry": { "no": "Offentlig og kommunal", "int": "" },
+      "location_country_code": null,
+      "long_description": {
+        "no": "As a proficient software architect, Benedict designs scalable, modular systems through microservices, emphasizing maintainability and adaptability. He's well-versed in Agile methodologies, diligently adhering to SCRUM principles for effective project management. Benedict's strong grasp of software testing, including unit, integration, and functional testing, guarantees the delivery of high-quality solutions.",
+        "int": ""
+      },
+      "modifier_id": null,
+      "month_from": "03",
+      "month_to": "08",
+      "order": 4,
+      "origin_id": null,
+      "owner_updated_at": "2021-10-03T13:42:31.000Z",
+      "percent_allocated": null,
+      "project_experience_skills": [
+        {
+          "_id": "6159a65b12b052116676d7c5",
+          "base_duration_in_years": 0,
+          "modifier_id": null,
+          "offset_duration_in_years": 0,
+          "order": 1,
+          "proficiency": 0,
+          "tags": { "no": "test samarbeid" },
+          "total_duration_in_years": 0,
+          "version": 1
+        }
+      ],
+      "project_extent_amt": null,
+      "project_extent_currency": null,
+      "project_extent_hours": null,
+      "project_type": {},
+      "recently_added": false,
+      "related_work_experience_id": null,
+      "starred": false,
+      "total_extent_amt": null,
+      "total_extent_currency": null,
+      "total_extent_hours": null,
+      "updated_at": "2023-01-02T09:22:57.727Z",
+      "version": 116,
+      "year_from": "2020",
+      "year_to": "2021",
+      "roles": [],
+      "images": []
+    }
+  ],
+  "certifications": [
+    {
+      "_id": "61599d3bbd33091127e43371",
+      "attachments": [
+        {
+          "_id": "63c50e4e4088f00fc119a43b",
+          "id": "63c50e4e4088f00fc119a43b",
+          "label": "Togaf sertifikat",
+          "file": {
+            "url": "https://cvpartner-attachments.examle.com",
+            "extension": "pdf"
+          }
+        }
+      ],
+      "created_at": "2021-10-03T12:08:27.805Z",
+      "disabled": false,
+      "diverged_from_master": false,
+      "external_unique_id": null,
+      "long_description": {},
+      "modifier_id": null,
+      "month": "",
+      "month_expire": "",
+      "name": { "no": "TOGAF 9 Certified", "int": "" },
+      "order": 2,
+      "organiser": { "no": "Firebrand ", "int": "" },
+      "origin_id": null,
+      "owner_updated_at": "2021-10-03T12:08:55.000Z",
+      "recently_added": false,
+      "starred": false,
+      "updated_at": "2023-01-16T08:43:58.792Z",
+      "version": 11,
+      "year": "2014",
+      "year_expire": ""
+    }
+  ],
+  "courses": [
+    {
+      "_id": "61599df3fe5a0e113d7b555f",
+      "created_at": "2021-10-03T12:11:31.107Z",
+      "disabled": false,
+      "diverged_from_master": false,
+      "external_unique_id": null,
+      "long_description": {},
+      "modifier_id": null,
+      "month": "",
+      "name": { "no": "Test kurs for offentlig sektor", "int": "" },
+      "order": 2,
+      "origin_id": null,
+      "owner_updated_at": "2021-10-03T12:11:53.000Z",
+      "program": { "no": "Difi", "int": "" },
+      "recently_added": false,
+      "starred": false,
+      "updated_at": "2022-04-27T19:25:08.535Z",
+      "version": 6,
+      "year": "2017",
+      "attachments": []
+    }
+  ],
+  "educations": [
+    {
+      "_id": "61599f137a8a4c1158ee0131",
+      "created_at": "2021-10-03T12:16:19.042Z",
+      "degree": { "no": "Artium", "int": "" },
+      "description": {},
+      "disabled": false,
+      "diverged_from_master": false,
+      "external_unique_id": null,
+      "modifier_id": null,
+      "month_from": "",
+      "month_to": "",
+      "order": 6,
+      "origin_id": null,
+      "owner_updated_at": "2021-10-03T12:16:39.000Z",
+      "recently_added": false,
+      "school": { "no": "Test VGS", "int": "" },
+      "starred": false,
+      "updated_at": "2021-10-03T12:25:48.493Z",
+      "version": 12,
+      "year_from": "1998",
+      "year_to": "2001",
+      "attachments": []
+    }
+  ],
+  "cv_roles": [
+    {
+      "_id": "6231abea2576ba4531ec9654",
+      "created_at": "2022-03-16T09:20:42.677Z",
+      "disabled": false,
+      "diverged_from_master": false,
+      "modifier_id": null,
+      "name": { "no": "R\\u00E5dgiver" },
+      "order": 0,
+      "origin_id": null,
+      "owner_updated_at": null,
+      "recently_added": false,
+      "starred": false,
+      "starred_order": null,
+      "updated_at": "2022-03-16T09:20:42.677Z",
+      "version": null,
+      "years_of_experience": 2,
+      "years_of_experience_offset": 0,
+      "project_experiences": [
+        {
+          "_id": "6159ad417a8a4c1154ee01a9",
+          "roles": [{ "_id": "6159adc67a8a4c114eee01aa" }],
+          "diverged_from_master": false
+        }
+      ]
+    }
+  ],
+  "highlighted_roles": [
+    {
+      "_id": "6231abea2576ba4531ec9658",
+      "created_at": "2022-03-16T09:20:42.677Z",
+      "disabled": false,
+      "diverged_from_master": false,
+      "modifier_id": null,
+      "name": { "no": "Virksomhetsarkitekt" },
+      "order": 0,
+      "origin_id": null,
+      "owner_updated_at": null,
+      "recently_added": false,
+      "starred": true,
+      "starred_order": 0,
+      "updated_at": "2022-03-16T09:20:42.677Z",
+      "version": null,
+      "years_of_experience": 0,
+      "years_of_experience_offset": 0,
+      "project_experiences": []
+    }
+  ],
+  "image": { "url": "Image" },
+  "can_write": false,
+  "blogs": [
+    {
+      "_id": "63b2b12d40717e0ff6e8aea5",
+      "created_at": "2023-01-02T10:25:49.775Z",
+      "disabled": false,
+      "diverged_from_master": false,
+      "external_unique_id": null,
+      "long_description": {},
+      "modifier_id": null,
+      "month": null,
+      "name": {},
+      "order": 0,
+      "origin_id": null,
+      "owner_updated_at": "2023-01-02T10:25:49.000Z",
+      "recently_added": false,
+      "starred": false,
+      "updated_at": "2023-01-02T10:25:49.775Z",
+      "url": null,
+      "version": 1,
+      "year": null
+    }
+  ],
+  "honors_awards": [
+    {
+      "_id": "6159a05d7a8a4c1158ee0136",
+      "created_at": "2021-10-03T12:21:49.482Z",
+      "disabled": false,
+      "diverged_from_master": false,
+      "external_unique_id": null,
+      "for_work": {
+        "no": "Felles Testkatalog og rammeverk for informasjonsforvaltning",
+        "int": ""
+      },
+      "issuer": { "no": "Testios", "int": "" },
+      "long_description": {},
+      "modifier_id": null,
+      "month": "",
+      "name": { "no": "Testprisen", "int": "" },
+      "order": 2,
+      "origin_id": null,
+      "owner_updated_at": "2023-01-02T09:30:59.000Z",
+      "recently_added": false,
+      "starred": true,
+      "updated_at": "2023-01-02T09:30:59.379Z",
+      "version": 8,
+      "year": "2019"
+    }
+  ],
+  "key_qualifications": [
+    {
+      "_id": "615993d3b2dfc511488bdc3a",
+      "created_at": "2021-10-03T11:28:19.912Z",
+      "disabled": false,
+      "diverged_from_master": false,
+      "external_unique_id": null,
+      "key_points": [
+        {
+          "_id": "61599570b2dfc5114a8bdc4f",
+          "created_at": "2021-10-03T11:35:12.180Z",
+          "disabled": false,
+          "diverged_from_master": false,
+          "long_description": {},
+          "modifier_id": null,
+          "name": { "no": "Digitaliseringsstrategi", "int": "" },
+          "order": 0,
+          "origin_id": null,
+          "recently_added": false,
+          "starred": false,
+          "updated_at": "2021-10-03T12:33:42.650Z",
+          "version": 5
+        }
+      ],
+      "label": { "no": "Personlige egenskaper", "int": "" },
+      "long_description": {
+        "no": "Ola, a versatile software developer, excels in Python, Java, and C++, demonstrating exceptional problem-solving skills. His ability to master new frameworks, such as React and Angular, highlights his adaptability. Ola's proficiency in database management, specifically with MySQL and MongoDB, sets him apart. By leveraging Git, he expertly maintains version control, ensuring efficient collaboration. Ola exhibits expertise in UI/UX design, creating visually appealing and user-friendly interfaces. His knack for responsive web development using HTML5, CSS3, and JavaScript contributes to seamless user experiences across devices. This talented developer implements RESTful APIs, optimizing system integration and communication.",
+        "int": ""
+      },
+      "modifier_id": null,
+      "order": 1,
+      "origin_id": null,
+      "owner_updated_at": "2023-03-28T13:47:11.000Z",
+      "recently_added": false,
+      "starred": false,
+      "tag_line": {},
+      "updated_at": "2023-03-28T13:47:10.639Z",
+      "version": 280
+    },
+    {
+      "_id": "63b2a010e474e70fd7b80b0f",
+      "created_at": "2023-01-02T09:12:48.444Z",
+      "disabled": true,
+      "diverged_from_master": false,
+      "external_unique_id": null,
+      "label": {},
+      "long_description": {},
+      "modifier_id": null,
+      "order": 0,
+      "origin_id": null,
+      "owner_updated_at": "2023-01-02T09:12:48.000Z",
+      "recently_added": false,
+      "starred": false,
+      "tag_line": {},
+      "updated_at": "2023-01-02T09:12:48.444Z",
+      "version": 1
+    }
+  ],
+  "languages": [
+    {
+      "_id": "6159a761b2dfc511468bdc80",
+      "created_at": "2021-10-03T12:51:45.378Z",
+      "disabled": false,
+      "diverged_from_master": false,
+      "external_unique_id": null,
+      "level": { "no": "Flytende", "int": "Fluent" },
+      "modifier_id": null,
+      "name": { "no": "Engelsk", "int": "English", "se": "Engelska" },
+      "order": 0,
+      "origin_id": null,
+      "owner_updated_at": "2021-10-03T12:52:13.000Z",
+      "recently_added": false,
+      "starred": false,
+      "updated_at": "2022-01-28T16:31:00.061Z",
+      "version": 11
+    }
+  ],
+  "positions": [
+    {
+      "_id": "61599e9812b052116676d7b2",
+      "created_at": "2021-10-03T12:14:16.399Z",
+      "description": {},
+      "disabled": false,
+      "diverged_from_master": false,
+      "external_unique_id": null,
+      "modifier_id": null,
+      "name": { "no": "Styremedlem TestBusiness ", "int": "" },
+      "order": 2,
+      "origin_id": null,
+      "owner_updated_at": "2021-10-03T12:15:31.000Z",
+      "recently_added": false,
+      "starred": false,
+      "updated_at": "2021-10-03T12:15:57.968Z",
+      "version": 9,
+      "year_from": "2020",
+      "year_to": ""
+    }
+  ],
+  "presentations": [
+    {
+      "_id": "6159a08e7a8a4c1156ee0119",
+      "created_at": "2021-10-03T12:22:38.603Z",
+      "description": {
+        "no": "Presentasjon for digitaliseringsutvalget til statsministeren",
+        "int": ""
+      },
+      "disabled": false,
+      "diverged_from_master": false,
+      "external_unique_id": null,
+      "long_description": {
+        "no": "Presentasjon for Per og Kari - for \\u00E5 beskrive arbeidet med informasjonsforvaltning i offentlig sektor som har p\\u00E5g\\u00E5tt siden 2015. ",
+        "int": ""
+      },
+      "modifier_id": null,
+      "month": "02",
+      "order": 1,
+      "origin_id": null,
+      "owner_updated_at": "2021-10-03T12:23:43.000Z",
+      "recently_added": false,
+      "starred": false,
+      "updated_at": "2021-10-03T12:23:45.456Z",
+      "version": 13,
+      "year": "2020"
+    }
+  ],
+  "recommendations": [
+    {
+      "_id": "6159a74c7a8a4c115dee02b9",
+      "created_at": "2021-10-03T12:51:24.255Z",
+      "disabled": false,
+      "diverged_from_master": false,
+      "external_unique_id": null,
+      "long_description": {},
+      "modifier_id": null,
+      "order": 0,
+      "origin_id": null,
+      "owner_updated_at": "2021-10-03T12:51:37.000Z",
+      "recently_added": false,
+      "recommender": { "no": "Jan Hansen, Test kommune", "int": "" },
+      "starred": false,
+      "updated_at": "2021-10-03T12:51:37.788Z",
+      "version": 3
+    }
+  ],
+  "work_experiences": [
+    {
+      "_id": "615995e6b2dfc511478bdc48",
+      "created_at": "2021-10-03T11:37:10.765Z",
+      "description": { "no": "Senior kunnskapsingeni\\u00F8r", "int": "" },
+      "disabled": false,
+      "diverged_from_master": false,
+      "employer": { "no": "Computas", "int": "" },
+      "external_unique_id": null,
+      "long_description": { "no": "", "int": "" },
+      "modifier_id": null,
+      "month_from": "06",
+      "month_to": "05",
+      "order": 7,
+      "origin_id": null,
+      "owner_updated_at": "2021-10-03T13:16:40.000Z",
+      "recently_added": false,
+      "starred": false,
+      "updated_at": "2021-10-03T13:16:40.801Z",
+      "version": 61,
+      "year_from": "2008",
+      "year_to": "2011"
+    }
+  ]
+}

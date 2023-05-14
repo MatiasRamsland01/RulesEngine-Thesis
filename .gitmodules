@@ -1,0 +1,3 @@
+[submodule "src/services/TimeSeries/CVtimeline"]
+	path = src/services/TimeSeries/CVtimeline
+	url = https://github.com/bouvet/CVtimeline.git

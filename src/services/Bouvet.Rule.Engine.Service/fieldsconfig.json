@@ -1,0 +1,21 @@
+{
+  "LimitConfig": {
+    "Value": 3
+  },
+  "IntegerFieldConfig": {
+    "Max": 1000000,
+    "Min": -1000000
+  },
+  "StringFieldConfig": {
+    "Max": 1000,
+    "Min": 1
+  },
+  "NameFieldConfig": {
+    "Max": 150,
+    "Min": 2
+  },
+  "AgeFieldConfig": {
+    "Max": 150,
+    "Min": 15
+  }
+}

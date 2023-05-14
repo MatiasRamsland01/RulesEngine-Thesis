@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="CV" Bounds="19.9999768066404,66.6429777771776,176.513333333333,147.8203" Group="Expanded" Label="Bouvet.CV.Service" />
+    <Node Id="Dapr1" Bounds="-3.25520836668147E-05,26.6428777771776,433.566677246094,207.8205" Group="Expanded" Label="Dapr" />
+    <Node Id="IHostedService" Bounds="42.4983194986983,165.553177777177,131.516666666666,28.9100000000001" Label="IHostedService" />
+    <Node Id="IoC1" Bounds="226.513311360677,66.6429777771776,187.053333333333,88.9101999999999" Group="Expanded" Label="IoC" />
+    <Node Id="ServiceCollection1" Bounds="246.513311360677,106.643077777178,147.053333333333,28.9099999999999" Label="ServiceCollection" />
+    <Node Id="WebAPI2" Bounds="42.49830078125,106.643077777178,80.02,28.9099999999999" Label="WebAPI" />
+  </Nodes>
+  <Links>
+    <Link Source="CV" Target="IHostedService" Category="Contains" />
+    <Link Source="CV" Target="WebAPI2" Category="Contains" />
+    <Link Source="Dapr1" Target="CV" Category="Contains" />
+    <Link Source="Dapr1" Target="IoC1" Category="Contains" />
+    <Link Source="IoC1" Target="ServiceCollection1" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contained By" IsContainment="True" OutgoingActionLabel="Contains" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Category 2" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 1" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 9" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category9')" />
+      <Setter Property="Background" Value="#FF00539C" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 3" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category3')" />
+      <Setter Property="Background" Value="#FF3EBCED" />
+    </Style>
+  </Styles>
+</DirectedGraph>

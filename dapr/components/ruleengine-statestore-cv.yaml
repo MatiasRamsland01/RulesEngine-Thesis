@@ -1,0 +1,29 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: ruleengine-statestore-cv
+  namespace: ruleengine
+spec:
+  type: state.mongodb
+  version: v1
+  metadata:
+    - name: host
+      value: mongo:27017
+    - name: username
+      secretKeyRef:
+        name: MONGO_USERNAME
+        key: MONGO_USERNAME
+    - name: password
+      secretKeyRef:
+        name: MONGO_PASSWORD
+        key: MONGO_PASSWORD
+    - name: databaseName
+      value: CVs
+    - name: collectionName
+      value: Bouvet-CVs
+    - name: params
+      value: "?authSource=admin"
+auth:
+  secretStore: ruleengine-secretstore
+scopes:
+  - bouvet-cv-service

@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="57f49b89-1fd1-4e91-939d-8561bea80a891" Bounds="269.89628191487,-450.13338571582,96.7866666666669,28.9099999999999" Label="New Node" />
+    <Node Id="Actors" Bounds="239.571960507684,-38.3629063264739,66.6066666666666,28.9099999999999" Label="Actors" />
+    <Node Id="BackgroundService" Bounds="164.922793841017,566.187093673525,162.606666666667,28.9100000000001" Label="BackgroundService" />
+    <Node Id="Bindings" Bounds="336.17862717435,-38.3629063264739,83.083333333333,28.9099999999999" Label="Bindings" />
+    <Node Id="Bouvet.Rule.Engine.Service" Category="Category2" Bounds="83.3844533284502,236.138277196931,637.118348592122,607.869699243164" Group="Expanded" Label="Bouvet.CV.Service" LayoutSettings="TopToBottom" />
+    <Node Id="Channels3" Category="Category1" Bounds="174.261951440464,356.13849022953,89.4866666666668,28.91" Label="Channels" />
+    <Node Id="Comtroller" Bounds="459.949460507684,516.187093673525,200.553333333333,267.82" Group="Expanded" Label="Controller" />
+    <Node Id="Configuration" Bounds="239.571960507684,20.5470936735259,117.826666666667,28.9099999999999" Label="Configuration" />
+    <Node Id="Dapr" Category="Category3" Bounds="63.3844605076837,-118.362906326474,677.118333333333,982.369999999999" Group="Expanded" Label="Dapr">
+      <Category Ref="Category9" />
+    </Node>
+    <Node Id="Dapr1" Category="Category9" Bounds="249.889673488776,-490.13338572222,136.793275092761,88.9138051358467" Group="Expanded" Label="Dapr" UseManualLocation="True" />
+    <Node Id="DaprPublish" Bounds="499.949460507684,596.187093673525,109.583333333333,28.9100000000001" Label="DaprPublish" />
+    <Node Id="DaprSubcripe" Bounds="499.949460507684,715.097093673525,120.553333333333,28.9099999999999" Label="DaprSubcripe" />
+    <Node Id="Features" Bounds="219.571960507684,-78.3629063264739,364.743333333333,265.639999999999" Group="Expanded" Label="Features" LayoutSettings="TopToBottom" />
+    <Node Id="Get" Bounds="479.949460507684,556.187093673525,149.583333333333,88.9099999999999" Group="Expanded" Label="Get" />
+    <Node Id="IGeneralBackgroundService" Bounds="123.384460507684,625.097093673525,245.683333333333,88.9099999999999" Group="Expanded" Label="IGeneralBackgroundService" />
+    <Node Id="IHostedServices" Bounds="103.384460507684,526.187093673525,285.683333333333,207.82" Group="Expanded" Label="IHostedServices" />
+    <Node Id="IoC" Bounds="115.478610027574,276.138547720165,207.053333333334,148.91" Group="Expanded" Label="IoC" UseManualLocation="True" />
+    <Node Id="Observability" Bounds="449.261960507683,-38.3629063264739,115.053333333333,28.9099999999999" Label="Observability" />
+    <Node Id="PostCalls" Bounds="479.949460507684,675.097093673525,160.553333333333,88.9099999999999" Group="Expanded" Label="Post Calls" />
+    <Node Id="PubSub" Bounds="239.571960507684,138.367093673526,180.903333333334,28.9099999999999" Label="Publish and subscribe" />
+    <Node Id="RulesEngine" Bounds="162.18112717435,665.097093673525,168.09,28.9099999999999" Label="RulesEngineService" />
+    <Node Id="SecretsManagement" Bounds="239.571960507684,79.4570936735258,176.32,28.9099999999999" Label="Secrets management" />
+    <Node Id="ServiceCollection" Bounds="135.478610027574,316.138647720165,167.053333333334,88.9101999999998" Group="Expanded" Label="ServiceCollection" />
+    <Node Id="StateManagement" Bounds="387.398627174351,20.5470936735259,158.966666666667,28.9099999999999" Label="State management" />
+    <Node Id="WebAPI" Bounds="419.949460507684,436.187093673525,280.553333333333,387.82" Group="Expanded" Label="WebAPI" LayoutSettings="TopToBottom" />
+    <Node Id="WebAPI1" Bounds="439.949460507684,476.187093673525,240.553333333333,327.82" Group="Expanded" Label="WebAPI" />
+  </Nodes>
+  <Links>
+    <Link Source="BackgroundService" Target="IGeneralBackgroundService" Bounds="246.226119995117,595.097106933594,0,21" />
+    <Link Source="Bindings" Target="Bouvet.Rule.Engine.Service" Bounds="-1545.54624430752,-1327.83963616923,24.4707196128552,217.786706135861" />
+    <Link Source="Bouvet.Rule.Engine.Service" Target="IHostedServices" Category="Contains" />
+    <Link Source="Bouvet.Rule.Engine.Service" Target="IoC" Category="Contains" />
+    <Link Source="Bouvet.Rule.Engine.Service" Target="WebAPI" Category="Contains" />
+    <Link Source="Comtroller" Target="Get" Category="Contains" />
+    <Link Source="Comtroller" Target="PostCalls" Category="Contains" />
+    <Link Source="Dapr" Target="Bouvet.Rule.Engine.Service" Category="Contains" />
+    <Link Source="Dapr" Target="Features" Category="Contains" />
+    <Link Source="Dapr1" Target="57f49b89-1fd1-4e91-939d-8561bea80a891" Category="Contains" />
+    <Link Source="Features" Target="Actors" Category="Contains" />
+    <Link Source="Features" Target="Bindings" Category="Contains" />
+    <Link Source="Features" Target="Configuration" Category="Contains" />
+    <Link Source="Features" Target="Observability" Category="Contains" />
+    <Link Source="Features" Target="PubSub" Category="Contains" />
+    <Link Source="Features" Target="SecretsManagement" Category="Contains" />
+    <Link Source="Features" Target="StateManagement" Category="Contains" />
+    <Link Source="Get" Target="DaprPublish" Category="Contains" />
+    <Link Source="IGeneralBackgroundService" Target="RulesEngine" Category="Contains" />
+    <Link Source="IHostedServices" Target="BackgroundService" Category="Contains" />
+    <Link Source="IHostedServices" Target="IGeneralBackgroundService" Category="Contains" />
+    <Link Source="IoC" Target="IHostedServices" Bounds="226.256449181458,425.048547720165,8.97750046502856,92.1809263677107" />
+    <Link Source="IoC" Target="ServiceCollection" Category="Contains" />
+    <Link Source="IoC" Target="WebAPI" Bounds="309.900718953624,425.048547720165,103.086355527292,84.4409181582724" />
+    <Link Source="PostCalls" Target="DaprSubcripe" Category="Contains" />
+    <Link Source="PubSub" Target="Bouvet.Rule.Engine.Service" Bounds="269.381870182307,167.276293673526,7.83496952102996,41.159855435234" />
+    <Link Source="ServiceCollection" Target="Channels3" Category="Contains" />
+    <Link Source="WebAPI" Target="WebAPI1" Category="Contains" />
+    <Link Source="WebAPI1" Target="Comtroller" Category="Contains" />
+  </Links>
+  <Categories>
+    <Category Id="Category1" Label="Category 1" Background="#FFE51400" IsTag="True" />
+    <Category Id="Category2" Label="Category 2" Background="#FF339933" IsTag="True" />
+    <Category Id="Category3" Label="Category 3" Background="#FF3EBCED" IsTag="True" />
+    <Category Id="Category9" Label="Category 9" Background="#FF00539C" IsTag="True" />
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contained By" IsContainment="True" OutgoingActionLabel="Contains" />
+  </Categories>
+  <Properties>
+    <Property Id="Background" Label="Background" Description="The background color" DataType="System.Windows.Media.Brush" />
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="IsTag" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="LayoutSettings" DataType="Microsoft.VisualStudio.Diagrams.View.GroupLayoutStyle" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Category 1" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category1')" />
+      <Setter Property="Background" Value="#FFE51400" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 9" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category9')" />
+      <Setter Property="Background" Value="#FF00539C" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 3" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category3')" />
+      <Setter Property="Background" Value="#FF3EBCED" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 2" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category2')" />
+      <Setter Property="Background" Value="#FF339933" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Category 4" ValueLabel="Has category">
+      <Condition Expression="HasCategory('Category4')" />
+      <Setter Property="Background" Value="#FF1BA1E2" />
+    </Style>
+  </Styles>
+</DirectedGraph>

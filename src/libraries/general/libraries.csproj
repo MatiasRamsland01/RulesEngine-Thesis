@@ -1,0 +1,74 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net7.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+	<PropertyGroup>
+		<PackageId>ruleengine.libraries</PackageId>
+		<Version>1.1.0</Version>
+		<Authors>RuleEngine Team</Authors>
+		<Company>Bouvet</Company>
+		<PackageDescription>This package add general stuff to and for RuleEngine</PackageDescription>
+		<RepositoryUrl>https://github.com/danhalvorsen/REPOSITORY</RepositoryUrl>
+		<IncludeSource></IncludeSource>
+		<IncludeSymbols></IncludeSymbols>
+		<RepositoryType>git</RepositoryType>
+		<PackageReadmeFile></PackageReadmeFile>
+
+	</PropertyGroup>
+	<ItemGroup>
+	  <Compile Remove="Entities\**" />
+	  <EmbeddedResource Remove="Entities\**" />
+	  <None Remove="Entities\**" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="Dapr.AspNetCore" Version="1.9.0" />
+		<PackageReference Include="Dapr.Client" Version="1.9.0" />
+		<PackageReference Include="FluentAssertions" Version="6.9.0" />
+		<PackageReference Include="FluentResults" Version="3.15.1" />
+		<PackageReference Include="FluentValidation" Version="11.4.0" />
+		<PackageReference Include="prometheus-net" Version="8.0.0" />
+		<PackageReference Include="prometheus-net.AspNetCore" Version="8.0.0" />
+		<PackageReference Include="Prometheus.Client.AspNetCore" Version="4.8.0" />
+		<PackageReference Include="Google.Protobuf" Version="3.22.1" />
+		<PackageReference Include="Grpc.Tools" Version="2.53.0">
+		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		  <PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<PackageReference Include="Microsoft.Bcl.HashCode" Version="1.1.1" />
+		<PackageReference Include="protobuf-net" Version="3.2.16" />
+		<PackageReference Include="RulesEngine" Version="4.0.0" />
+		<PackageReference Include="Serilog.AspNetCore" Version="6.1.0" />
+		<PackageReference Include="Serilog.Settings.Configuration" Version="3.4.0" />
+		<PackageReference Include="Serilog.Sinks.Seq" Version="5.2.2" />
+		<PackageReference Include="System.Net.Http" Version="4.3.4" />
+		<PackageReference Include="MediatR" Version="11.1.0" />
+		<PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="11.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.2" />
+		<PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.17.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.Caching.Abstractions" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Http" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Options" Version="7.0.0" />
+		<PackageReference Include="RazorEngine.NetCore" Version="3.1.0" />
+		<PackageReference Include="Microsoft.Net.Http.Headers" Version="2.2.8" />
+		<PackageReference Include="xunit.extensibility.core" Version="2.4.2" />
+		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Extentions\DotNetCore\Communication\PubSub\Types\" />
+	  <Folder Include="NewFolder\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Extentions\DotNetCore\Communication\PubSub\Types\" />
+	</ItemGroup>
+	<ItemGroup>
+	<ProjectReference Include="..\..\libraries\fields\fields.csproj" />
+</ItemGroup>
+</Project>

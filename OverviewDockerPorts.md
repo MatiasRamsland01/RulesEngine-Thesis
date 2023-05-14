@@ -1,0 +1,129 @@
+<table>
+    <tr>
+        <td> Service </td>
+        <td> Public Port </td>
+        <td> Private Port </td>
+        <td> Private GRPC port</td>
+        <td>Public GRPC port</td>
+    </tr>
+<!--bouvet.cv.service-->
+     <tr>
+        <td>bouvet.cv.service</td>
+        <td>5101</td>
+        <td>80</td>
+        <td>50002</td>
+        <td>50001</td>
+    </tr>
+<!--bouvet.notification.service-->
+     <tr>
+        <td>bouvet.notification.service</td>
+        <td>5108</td>
+        <td>80</td>
+        <td>50006</td>
+        <td>50001</td>
+    </tr>
+<!--bouvet.rule.engine.service-->
+     <tr>
+        <td>bouvet.rule.service</td>
+        <td>5121</td>
+        <td>80</td>
+        <td>50007</td>
+        <td>50001</td>
+    </tr>
+<!--webstatus-->
+     <tr>
+        <td>Webstatus</td>
+        <td>5107</td>
+        <td>80</td>
+        <td></td>
+        <td></td>
+    </tr>
+<!--RabbitMQ-->
+     <tr>
+        <td>RabbitMQ</td>
+        <td>5672</td>
+        <td>5672</td>
+        <td></td>
+        <td></td>
+    </tr>
+<!--Redis-->
+     <tr>
+        <td>Redis</td>
+        <td>5379</td>
+        <td>6379</td>
+        <td></td>
+        <td></td>
+    </tr>
+<!--Seq-->
+     <tr>
+        <td>Seq</td>
+        <td>5340</td>
+        <td>80</td>
+        <td></td>
+        <td></td>
+    </tr>
+<!--Zipkin-->
+     <tr>
+        <td>Zipkin</td>
+        <td>9411</td>
+        <td>9411</td>
+        <td></td>
+        <td></td>
+    </tr>
+<!--Grafana-->
+     <tr>
+        <td>Grafana</td>
+        <td>3000</td>
+        <td>3000</td>
+        <td></td>
+        <td></td>
+    </tr>
+<!--Prometheus-->
+     <tr>
+        <td>Grafana</td>
+        <td>9090</td>
+        <td>9090</td>
+        <td></td>
+        <td></td>
+    </tr>
+<!--SQL server-->
+     <tr>
+        <td>SQL server</td>
+        <td>5433</td>
+        <td>1433</td>
+        <td></td>
+        <td></td>
+    </tr>
+<!--Mongo server-->
+     <tr>
+        <td>MongoDB</td>
+        <td>8007</td>
+        <td>27017</td>
+        <td></td>
+        <td></td>
+    </tr>
+<!--Mongo express-->
+     <tr>
+        <td>Mongo express</td>
+        <td>8081</td>
+        <td>8081</td>
+        <td></td>
+        <td></td>
+    </tr>
+<!--Dapr-Placement-->
+     <tr>
+        <td>Dapr Placement</td>
+        <td></td>
+        <td></td>
+        <td>50000</td>
+        <td>50000</td>
+    </tr>
+<!--cv.partner.service-->
+     <tr>
+        <td>cv.partner.service (our mock and testing service)</ td >
+        <td>5103</td>
+        <td>80</td>
+        <td>50005</td>
+        <td>50001</td>
+    </tr>
+</table>

@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 Namespace=Libraries.Entities.Base Type=IntegerValueValidator)" Category="CodeSchema_Class" Bounds="-9401.7509624566,-10021.6912977431,183.049999999999,27.25" CodeSchemaProperty_IsPublic="True" CommonLabel="IntegerValueValidator" Icon="Microsoft.VisualStudio.Class.Public" Label="IntegerValueValidator" SourceLocation="(Assembly=file:///C:/Users/dan.halvorsen/source/repos/dapr/Concepts/Demo3/RuleEngine/Libraries/Entities/Base/IntegerFieldValidator.cs StartLineNumber=4 StartCharacterOffset=15 EndLineNumber=4 EndCharacterOffset=36)" UseManualLocation="True" />
+    <Node Id="(@1 Type=StringFieldValidator)" Category="CodeSchema_Class" Bounds="-9090.92318467882,-10031.1924913194,170.796666666669,27.25" CodeSchemaProperty_IsPublic="True" CommonLabel="StringFieldValidator" Icon="Microsoft.VisualStudio.Class.Public" Label="StringFieldValidator" SourceLocation="(Assembly=file:///C:/Users/dan.halvorsen/source/repos/dapr/Concepts/Demo3/RuleEngine/Libraries/Entities/Base/StringFieldValidator.cs StartLineNumber=2 StartCharacterOffset=13 EndLineNumber=2 EndCharacterOffset=33)" UseManualLocation="True" />
+    <Node Id="@2" Category="CodeSchema_Class" Bounds="-9071.12840169271,-10133.0336371528,112.703333333331,27.25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="StringField" Icon="Microsoft.VisualStudio.Class.Public" Label="StringField" SourceLocation="(Assembly=file:///C:/Users/dan.halvorsen/source/repos/dapr/Concepts/Demo3/RuleEngine/Libraries/Entities/Base/StringField.cs StartLineNumber=3 StartCharacterOffset=22 EndLineNumber=3 EndCharacterOffset=33)" UseManualLocation="True" />
+    <Node Id="@3" Category="CodeSchema_Interface" Bounds="-9188,-10205.0541349569,104.366666666669,27.25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="IField&lt;T&gt;" Icon="Microsoft.VisualStudio.Interface.Public" Label="IField&lt;T&gt;" SourceLocation="(Assembly=file:///C:/Users/dan.halvorsen/source/repos/dapr/Concepts/Demo3/RuleEngine/Libraries/Entities/Base/IField.cs StartLineNumber=4 StartCharacterOffset=21 EndLineNumber=4 EndCharacterOffset=27)" UseManualLocation="True" />
+    <Node Id="@4" Category="CodeSchema_Class" Bounds="-9372.01506835937,-10129.1630859375,120.220000000001,27.25" CodeSchemaProperty_IsAbstract="True" CodeSchemaProperty_IsPublic="True" CommonLabel="IntegerField" Icon="Microsoft.VisualStudio.Class.Public" Label="IntegerField" SourceLocation="(Assembly=file:///C:/Users/dan.halvorsen/source/repos/dapr/Concepts/Demo3/RuleEngine/Libraries/Entities/Base/IntegerField.cs StartLineNumber=4 StartCharacterOffset=26 EndLineNumber=4 EndCharacterOffset=38)" UseManualLocation="True" />
+  </Nodes>
+  <Links>
+    <Link Source="(@1 Namespace=Libraries.Entities.Base Type=IntegerValueValidator)" Target="@4" Bounds="-9311.55137593997,-10092.9141838147,1.11257661085619,71.2228860716205" />
+    <Link Source="(@1 Type=StringFieldValidator)" Target="@2" Bounds="-9012.72527917828,-10096.8201142648,5.96209548620391,65.6277314522522" />
+    <Link Source="@2" Target="@3" Bounds="-9105.18330983094,-10173.2016466862,67.5078823465155,40.1680095334232" />
+    <Link Source="@4" Target="@3" Bounds="-9280.29081224988,-10174.2416243681,104.595353585597,45.0785384305964" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Class" Label="Class" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="Classes" />
+    <Category Id="CodeSchema_Interface" Label="Interface" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Interface" NavigationActionLabel="Interfaces" />
+    <Category Id="CodeSchema_Type" Label="Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" NavigationActionLabel="Types" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsAbstract" Label="Is Abstract" Description="Flag to indicate member is 'Abstract' does not provide a full implementation" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPublic" Label="Is Public" Description="Flag to indicate the scope is Public" DataType="System.Boolean" />
+    <Property Id="CommonLabel" DataType="System.String" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="Icon" Label="Icon" Description="Icon" DataType="System.String" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="SourceLocation" Label="Start Line Number" DataType="Microsoft.VisualStudio.GraphModel.CodeSchema.SourceLocation" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="Assembly" Label="Assembly" ValueType="Uri" />
+    <Name Id="GenericParameterCount" Label="Generic Parameter Count" ValueType="System.String" />
+    <Name Id="Name" Label="Name" ValueType="System.String" />
+    <Name Id="Namespace" Label="Namespace" ValueType="System.String" />
+    <Name Id="Type" Label="Type" ValueType="System.Object" />
+  </QualifiedNames>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(0ff0baa2-a69f-4ff0-a427-c9fdc82aa0ef.OutputPathUri)" />
+    <Alias n="2" Id="(@1 Type=StringField)" />
+    <Alias n="3" Id="(@1 Namespace=Libraries.Entities.Base Type=(Name=IField GenericParameterCount=1))" />
+    <Alias n="4" Id="(@1 Namespace=Libraries.Entities.Base Type=IntegerField)" />
+  </IdentifierAliases>
+  <Paths>
+    <Path Id="0ff0baa2-a69f-4ff0-a427-c9fdc82aa0ef.OutputPathUri" Value="file:///C:/Users/dan.halvorsen/source/repos/dapr/Concepts/Demo3/RuleEngine/Libraries/bin/Debug/net7.0/Libraries.dll" />
+  </Paths>
+</DirectedGraph>

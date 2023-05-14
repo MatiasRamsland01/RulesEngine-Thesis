@@ -1,0 +1,25 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "composeLaunchAction": "LaunchBrowser",
+      "composeLaunchServiceName": "bouvet.rule.engine.service",
+      "composeLaunchUrl": "{Scheme}://localhost:{ServicePort}/swagger",
+      "serviceActions": {
+        "bouvet.cv.service": "StartWithoutDebuggin",
+        "bouvet.notification.service": "StartWithoutDebuggin",
+        "redis": "StartWithoutDebugging",
+        "bouvet.rule.engine.service-dapr": "StartWithoutDebugging",
+        "cv.partner.service": "StartWithoutDebuggin",
+        "bouvet.rule.engine.service": "StartWithoutDebuggin",
+        "seq": "StartWithoutDebugging",
+        "zipkin": "StartWithoutDebugging",
+        "bouvet.cv.service-dapr": "StartWithoutDebugging",
+        "dapr-placement": "StartWithoutDebugging",
+        "rabbitmq": "StartWithoutDebugging",
+        "sqldata": "StartWithoutDebugging"
+      }
+    }
+  }
+}

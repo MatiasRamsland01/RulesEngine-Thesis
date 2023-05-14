@@ -1,0 +1,211 @@
+version: '3.7'
+services:
+  rabbitmq:
+    ports:
+      - "5672:5672"
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+  redis:
+    ports:
+      - "5379:6379"
+    volumes:
+      - redis_data:/data
+  seq:
+    environment:
+      - ACCEPT_EULA=Y
+    ports:
+      - "5340:80"
+  zipkin:
+    ports:
+      - "9411:9411"
+  grafana:
+    ports:
+      - "3000:3000"
+    depends_on:
+      - prometheus
+    volumes:
+      - grafana_data:/var/lib/grafana
+  prometheus:
+    ports:
+      - "9090:9090"
+    volumes:
+      - prometheus_data:/prometheus
+      - ./prometheus.yml:/etc/prometheus/prometheus.yml
+  ########################################################################################
+  sqldata:
+    environment:
+      - SA_PASSWORD=${SA_PASSWORD}
+      - ACCEPT_EULA=Y
+    ports:
+      - "5433:1433"
+    volumes:
+      - ruleengine-sqldata:/var/opt/mssql
+    mem_limit: 4g
+  mongo:
+    command: mongod --auth
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=${MONGO_INITDB_ROOT_USERNAME}
+      - MONGO_INITDB_ROOT_PASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
+    ports:
+      - 8007:27017
+    volumes:
+      - mongodb_data:/data/db
+      - mongodb_data:/data/configdb
+  mongo-express:
+    ports:
+      - 8081:8081
+    environment:
+      - ME_CONFIG_MONGODB_ADMINUSERNAME=${MONGO_INITDB_ROOT_USERNAME}
+      - ME_CONFIG_MONGODB_ADMINPASSWORD=${MONGO_INITDB_ROOT_PASSWORD}
+      - ME_CONFIG_MONGODB_URL=mongodb://${MONGO_INITDB_ROOT_USERNAME}:${MONGO_INITDB_ROOT_PASSWORD}@mongo:27017/
+    depends_on:
+      - mongo
+      ########################################################################################
+      #CV-PARTNER
+      ########################################################################################
+  cv-partner-service:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+      - SeqServerUrl=http://seq
+    ports:
+      - "5103:80"
+      - "50001:50001"
+  cv-partner-service-dapr:
+    restart: always
+    command:
+      [
+        "./daprd",
+        "-app-id",
+        "cv-partner-service",
+        "-app-port",
+        "80",
+        "-components-path",
+        "/components",
+        "-config",
+        "/configuration/ruleengine-config.yaml"
+      ]
+    volumes:
+      - "./dapr/components/:/components"
+      - "./dapr/configuration/:/configuration"
+
+  ########################################################################################
+  #BOUVET CV-SERVICE
+  ########################################################################################
+  bouvet-cv-service:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+      - SeqServerUrl=http://seq
+    ports:
+      - "5101:80"
+      - "50002:50001"
+  bouvet-cv-service-dapr:
+    restart: always
+    command:
+      [
+        "./daprd",
+        "-app-id",
+        "bouvet-cv-service",
+        "-app-port",
+        "80",
+        "-components-path",
+        "/components",
+        "-config",
+        "/configuration/ruleengine-config.yaml"
+      ]
+    volumes:
+      - "./dapr/components/:/components"
+      - "./dapr/configuration/:/configuration"
+  ########################################################################################
+  #NOTIFICATION
+  ########################################################################################
+  bouvet-notification-service:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Staging
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+      - SeqServerUrl=http://seq
+    ports:
+      - "5108:80"
+      - "50006:50001"
+  bouvet-notification-service-dapr:
+    restart: always
+    command:
+      [
+        "./daprd",
+        "-app-id",
+        "bouvet-notification-service",
+        "-app-port",
+        "80",
+        "-components-path",
+        "/components",
+        "-config",
+        "/configuration/ruleengine-config.yaml"
+      ]
+    volumes:
+      - "./dapr/components/:/components"
+      - "./dapr/configuration/:/configuration"
+  ########################################################################################
+  #RULEENGINE
+  #######################################################################################
+  bouvet-rule-engine-service:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Staging
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+      - SeqServerUrl=http://seq
+    ports:
+      - "5121:80"
+      - "50007:50001"
+  bouvet-rule-engine-service-dapr:
+    restart: always
+    command:
+      [
+        "./daprd",
+        "-app-id",
+        "bouvet-rule-engine-service",
+        "-app-port",
+        "80",
+        "-components-path",
+        "/components",
+        "-config",
+        "/configuration/ruleengine-config.yaml"
+      ]
+    volumes:
+      - "./dapr/components/:/components"
+      - "./dapr/configuration/:/configuration"
+  ########################################################################################
+  #webstatus
+  #######################################################################################
+  webstatus:
+    environment:
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+      - HealthChecksUI__HealthChecks__0__Name=cv.partner.service
+      - HealthChecksUI__HealthChecks__0__Uri=http://cv-partner-service/hc
+      - HealthChecksUI__HealthChecks__1__Name=bouvet.cv.service
+      - HealthChecksUI__HealthChecks__1__Uri=http://bouvet-cv-service/hc
+      - HealthChecksUI__HealthChecks__2__Name=bouvet.notification.service
+      - HealthChecksUI__HealthChecks__2__Uri=http://bouvet-notification-service/hc
+      - HealthChecksUI__HealthChecks__3__Name=bouvet.rule.engine.service
+      - HealthChecksUI__HealthChecks__3__Uri=http://bouvet-rule-engine-service/hc
+    ports:
+      - "5107:80"
+  dapr-placement:
+    restart: always
+    command:
+      [
+        "./placement",
+        "-port",
+        "50000",
+        "-log-level",
+        "debug"
+      ]
+    ports:
+      - "50000:50000"
+
+volumes:
+  ruleengine-sqldata:
+  mongodb_data:
+  rabbitmq_data:
+  grafana_data:
+  prometheus_data:
+  redis_data:

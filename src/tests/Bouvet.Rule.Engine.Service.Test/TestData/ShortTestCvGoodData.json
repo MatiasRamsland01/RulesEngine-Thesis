@@ -1,0 +1,587 @@
+{
+    "_id": "60c0a2c706f9be0fd25a5193",
+    "born_day": 1,
+    "born_month": 1,
+    "born_year": 1982,
+    "bruker_id": "60c0a2c706f9be0fd25a5192",
+    "created_at": "2021-06-09T11:15:19.513Z",
+    "custom_tag_ids": [
+        "63f22c01cfc8850fcd0537cb"
+    ],
+    "default": true,
+    "name_multilang": {},
+    "nationality": {
+        "no": "Norsk",
+        "int": ""
+    },
+    "navn": "Ola Nordmann",
+    "owner_updated_at": "2023-03-28T13:47:11.000Z",
+    "owner_updated_at_significant": "2021-10-03T13:45:41.000Z",
+    "place_of_residence": {
+        "no": "Test",
+        "int": ""
+    },
+    "telefon": "\\u002B4799790167",
+    "title": {
+        "no": "Avdelingsleder arkitektur",
+        "int": ""
+    },
+    "twitter": "testtwitter",
+    "updated_at": "2023-03-28T13:47:10.675Z",
+    "version": 8,
+    "name": "Ola Nordmann",
+    "user_id": "60c0a2c706f9be0fd25a5192",
+    "company_id": "4f460a2de8ee2a74be000001",
+    "external_unique_id": "3958",
+    "email": "Ola.Nordmann@bouvet.no",
+    "country_code": "no",
+    "language_code": "no",
+    "language_codes": [
+        "no",
+        "int",
+        "se"
+    ],
+    "updated_ago": "N/A",
+    "template_document_type": "doc",
+    "default_word_template_id": "5a58b7d47da82e0ea9f3801b",
+    "default_ppt_template_id": "62b4282e9a34e01002f26e72",
+    "image": {
+        "url": "image"
+    },
+    "technologies": [
+        {
+            "_id": "rthry",
+            "category": {},
+            "created_at": "2022-12-01T14:15:09.398Z",
+            "disabled": true,
+            "diverged_from_master": false,
+            "exclude_tags": [],
+            "external_unique_id": null,
+            "modifier_id": null,
+            "order": null,
+            "origin_id": null,
+            "owner_updated_at": "2023-03-23T09:02:02.000Z",
+            "recently_added": false,
+            "starred": false,
+            "technology_skills": [],
+            "uncategorized": true,
+            "updated_at": "2023-03-23T09:02:02.598Z",
+            "version": 2
+        },
+        {
+            "_id": "63b2e5a3ecd6ae0fc589a000",
+            "category": {
+                "no": "Programmeringsspråk",
+                "int": "Programming languages",
+                "se": "Programmeringsspråk"
+            },
+            "created_at": "2023-01-02T14:09:39.358Z",
+            "disabled": true,
+            "diverged_from_master": false,
+            "exclude_tags": [],
+            "external_unique_id": null,
+            "modifier_id": null,
+            "order": 1,
+            "origin_id": null,
+            "owner_updated_at": "2023-03-23T08:57:20.000Z",
+            "recently_added": false,
+            "starred": false,
+            "technology_skills": [
+                {
+                    "_id": "63b2e5a3f5547f104ee7a057",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 1,
+                    "order": 1,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "JavaScript",
+                        "int": "JavaScript",
+                        "se": "JavaScript"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 2
+                },
+                {
+                    "_id": "63b2e5e740717e0fb2e8b554",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 1,
+                    "order": 2,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Golang"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 2
+                },
+                {
+                    "_id": "63b2e5fee474e70fd7b81223",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 2,
+                    "order": 3,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Python",
+                        "int": "Python",
+                        "se": "Python"
+                    },
+                    "total_duration_in_years": 2,
+                    "version": 3
+                },
+                {
+                    "_id": "63b2e6043a0ebe0ff2e7689c",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 4,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "C#",
+                        "int": "C#",
+                        "se": "C#"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                },
+                {
+                    "_id": "641c1433198b660fe02b787b",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 1,
+                    "order": 5,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Matlab",
+                        "int": "Matlab",
+                        "se": "Matlab"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 2
+                }
+            ],
+            "uncategorized": false,
+            "updated_at": "2023-03-23T08:57:20.357Z",
+            "version": 28
+        },
+        {
+            "_id": "63b2e5daf5547f104ee7a05d",
+            "category": {
+                "no": "Front-end",
+                "se": "Front-end"
+            },
+            "created_at": "2023-01-02T14:10:34.053Z",
+            "disabled": true,
+            "diverged_from_master": false,
+            "exclude_tags": [],
+            "external_unique_id": null,
+            "modifier_id": null,
+            "order": 2,
+            "origin_id": null,
+            "owner_updated_at": "2023-01-03T11:12:10.000Z",
+            "recently_added": false,
+            "starred": false,
+            "technology_skills": [
+                {
+                    "_id": "63b2e5dae474e70ff2b814d2",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 1,
+                    "order": 1,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "HTML/CSS",
+                        "int": "HTML/CSS",
+                        "se": "HTML/CSS"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 2
+                },
+                {
+                    "_id": "63b2ef3ea6fae51022a037c9",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 1,
+                    "order": 2,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Vue.js"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 2
+                }
+            ],
+            "uncategorized": false,
+            "updated_at": "2023-01-03T11:12:10.874Z",
+            "version": 1
+        },
+        {
+            "_id": "63b2e5f4e474e70fd7b8121e",
+            "category": {
+                "no": "Rammeverk og standarder",
+                "int": "Frameworks and standards",
+                "se": "Ramverk och standarder"
+            },
+            "created_at": "2023-01-02T14:11:00.371Z",
+            "disabled": true,
+            "diverged_from_master": false,
+            "exclude_tags": [],
+            "external_unique_id": null,
+            "modifier_id": null,
+            "order": 3,
+            "origin_id": null,
+            "owner_updated_at": "2023-03-23T09:03:26.000Z",
+            "recently_added": false,
+            "starred": false,
+            "technology_skills": [
+                {
+                    "_id": "63b2e5f4e474e70fe7b814ba",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 1,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": ".NET",
+                        "int": ".NET",
+                        "se": ".NET"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                },
+                {
+                    "_id": "63b2ef343a0ebe0fe6e76717",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 2,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Entity Framework",
+                        "int": "Entity Framework",
+                        "se": "Entity Framework"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                },
+                {
+                    "_id": "63b40dcac7b5640f9ce0f50f",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 1,
+                    "order": 3,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "REST API",
+                        "int": "REST API",
+                        "se": "REST API"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 2
+                },
+                {
+                    "_id": "641c15dd6e0cb20ff09a9684",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 4,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Microservices",
+                        "int": "Microservices",
+                        "se": "Microservices"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                }
+            ],
+            "uncategorized": false,
+            "updated_at": "2023-03-23T09:03:25.939Z",
+            "version": 1
+        },
+        {
+            "_id": "63b2e976e474e70fd9b8123b",
+            "category": {
+                "no": "Kildekontroll, bygg og deploy",
+                "int": "Source control, build and deployment",
+                "se": "Versionshantera, bygga och produktionssätta"
+            },
+            "created_at": "2023-01-02T14:25:58.079Z",
+            "disabled": true,
+            "diverged_from_master": false,
+            "exclude_tags": [],
+            "external_unique_id": null,
+            "modifier_id": null,
+            "order": 4,
+            "origin_id": null,
+            "owner_updated_at": "2023-01-03T11:12:15.000Z",
+            "recently_added": false,
+            "starred": false,
+            "technology_skills": [
+                {
+                    "_id": "63b2e976f5547f105ae7a0b6",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 2,
+                    "order": 1,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Git",
+                        "int": "Git",
+                        "se": "Git"
+                    },
+                    "total_duration_in_years": 2,
+                    "version": 3
+                }
+            ],
+            "uncategorized": false,
+            "updated_at": "2023-01-03T11:12:15.116Z",
+            "version": 1
+        },
+        {
+            "_id": "63b2ef20a6fae5103ca035f1",
+            "category": {
+                "no": "Database og databaseverktøy",
+                "int": "Database and database tools",
+                "se": "Databas och databasverktyg"
+            },
+            "created_at": "2023-01-02T14:50:08.579Z",
+            "disabled": true,
+            "diverged_from_master": false,
+            "exclude_tags": [],
+            "external_unique_id": null,
+            "modifier_id": null,
+            "order": 5,
+            "origin_id": null,
+            "owner_updated_at": "2023-01-03T11:12:20.000Z",
+            "recently_added": false,
+            "starred": false,
+            "technology_skills": [
+                {
+                    "_id": "63b2ef2040717e0ff6e8b7f1",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 1,
+                    "order": 1,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "MySQL",
+                        "int": "MySQL",
+                        "se": "MySQL"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 2
+                },
+                {
+                    "_id": "63b2ef4c40717e0fbbe8b5cf",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 1,
+                    "order": 2,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "SQLite",
+                        "int": "SQLite",
+                        "se": "SQLite"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 2
+                }
+            ],
+            "uncategorized": false,
+            "updated_at": "2023-01-03T11:12:20.174Z",
+            "version": 1
+        },
+        {
+            "_id": "63b3f653eef8220fd05d7ca1",
+            "category": {
+                "no": "Programmeringsspråk",
+                "int": "Programming languages",
+                "se": "Programmeringsspråk"
+            },
+            "created_at": "2023-01-03T09:33:07.234Z",
+            "disabled": true,
+            "diverged_from_master": false,
+            "exclude_tags": [],
+            "external_unique_id": null,
+            "modifier_id": null,
+            "order": 6,
+            "origin_id": null,
+            "owner_updated_at": "2023-01-03T09:50:02.000Z",
+            "recently_added": false,
+            "starred": false,
+            "technology_skills": [
+                {
+                    "_id": "63b3f653c7b5640f9ae0f040",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 1,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Rust"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                }
+            ],
+            "uncategorized": false,
+            "updated_at": "2023-01-03T09:50:02.587Z",
+            "version": 3
+        },
+        {
+            "_id": "63b40b37c7b5640fb3e0f42d",
+            "category": {
+                "no": "Virtualisering",
+                "int": "Virtualization",
+                "se": "Virtualisering"
+            },
+            "created_at": "2023-01-03T11:02:15.166Z",
+            "disabled": true,
+            "diverged_from_master": false,
+            "exclude_tags": [],
+            "external_unique_id": null,
+            "modifier_id": null,
+            "order": 7,
+            "origin_id": null,
+            "owner_updated_at": "2023-01-03T11:12:25.000Z",
+            "recently_added": false,
+            "starred": false,
+            "technology_skills": [
+                {
+                    "_id": "63b40b37c7b5640faae0f3c6",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 1,
+                    "order": 1,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Docker",
+                        "int": "Docker",
+                        "se": "Docker"
+                    },
+                    "total_duration_in_years": 1,
+                    "version": 2
+                }
+            ],
+            "uncategorized": false,
+            "updated_at": "2023-01-03T11:12:25.715Z",
+            "version": 1
+        },
+        {
+            "_id": "641c15bc198b660fd82b7a24",
+            "category": {
+                "no": "Øvrig kompetanse",
+                "int": "Other competencies",
+                "se": "Övrig kompetens"
+            },
+            "created_at": "2023-03-23T09:02:52.840Z",
+            "disabled": true,
+            "diverged_from_master": false,
+            "exclude_tags": [],
+            "external_unique_id": null,
+            "modifier_id": null,
+            "order": 8,
+            "origin_id": null,
+            "owner_updated_at": "2023-03-23T09:05:24.000Z",
+            "recently_added": false,
+            "starred": false,
+            "technology_skills": [
+                {
+                    "_id": "641c16543570e40fcf197081",
+                    "base_duration_in_years": 0,
+                    "modifier_id": null,
+                    "offset_duration_in_years": 0,
+                    "order": 1,
+                    "proficiency": 0,
+                    "tags": {
+                        "no": "Dapr"
+                    },
+                    "total_duration_in_years": 0,
+                    "version": 1
+                }
+            ],
+            "uncategorized": false,
+            "updated_at": "2023-03-23T09:05:24.654Z",
+            "version": 1
+        }
+    ],
+    "work_experiences": [
+        {
+            "_id": "63b2e5deecd6ae0fc3899e23",
+            "created_at": "2023-01-02T14:10:38.532Z",
+            "description": {
+                "no": "Servicemedarbeider",
+                "int": ""
+            },
+            "disabled": false,
+            "diverged_from_master": false,
+            "employer": {
+                "no": "Leos Lekeland",
+                "int": ""
+            },
+            "external_unique_id": null,
+            "long_description": {
+                "no": "Arbeidet gikk ut på å holde bursdager, rydde, kassearbeid og drive med salg. \nNoen av kvalifikasjonene jeg lærte gjennom dette arbeidsoppholde var å være serviceinnstilt, jobbe effektivt og å være tålmodig. ",
+                "int": ""
+            },
+            "modifier_id": null,
+            "month_from": "10",
+            "month_to": "10",
+            "order": 5,
+            "origin_id": null,
+            "owner_updated_at": "2023-01-03T11:18:49.000Z",
+            "recently_added": false,
+            "starred": false,
+            "updated_at": "2023-01-03T12:32:13.998Z",
+            "version": 52,
+            "year_from": "2017",
+            "year_to": "2019"
+        }
+    ],
+    "key_qualifications": [
+        {
+            "_id": "63b3f347eef8220fd25d7eff",
+            "created_at": "2023-01-03T09:20:07.338Z",
+            "disabled": false,
+            "diverged_from_master": false,
+            "external_unique_id": null,
+            "label": {
+                "no": "Standard",
+                "int": "Standard"
+            },
+            "long_description": {
+                "no": "Matias er en pålitelig, hardtjobbende og ambisiøs person som er alltid er på jakt etter nye utfordringer. Han er motivert for å utvikle seg både faglig og teknisk. Den største interessen hans ligger innen back-end utvikling.\n\nMatias skriver nå bacheloroppgave i samarbeid med Bouvet, slik at bachelor graden som han studerer innen datateknologi ved Universitetet i Stavanger er planlagt å være ferdig i slutten av mai 2023. Gjennom studiene har Matias opparbeidet seg en stor variasjon av kunnskap og forståelse innenfor utviklingen av nye, fremtidsrettede programmer, der det var både fokus på front-end og back-end utvikling. I løpet av studiene har han også sittet i styret i linjeforeningen LED som fag og romansvarlig for data studentene, og er veldig glad i å være engasjert og bidra til et godt samhold. ",
+                "int": "Matias is a reliable, hard-working and ambitious person who is always looking for new challenges. He is motivated to develop both academically and technically. His main interest lies in back-end development.\n\nMatias is now writing his bachelor's thesis in collaboration with Bouvet, so that the bachelor's degree he is studying in computer science at the University of Stavanger is scheduled to be completed at the end of May 2023. Through his studies, Matias has built up a great variety of knowledge and understanding within the development of new , forward-looking programmes, where there was both a focus on front-end and back-end. During his studies, he has also sat on the board of the association for electrical and computer science students as subject and room manager, and is very happy to be involved and contribute to good environment."
+            },
+            "modifier_id": null,
+            "order": 0,
+            "origin_id": null,
+            "owner_updated_at": "2023-01-03T11:09:06.000Z",
+            "recently_added": false,
+            "starred": false,
+            "tag_line": {},
+            "updated_at": "2023-01-03T11:09:06.368Z",
+            "version": 90
+        },
+        {
+            "_id": "6440df45477acf0f86709697",
+            "created_at": "2023-04-20T06:44:21.180Z",
+            "disabled": true,
+            "diverged_from_master": false,
+            "external_unique_id": null,
+            "label": {},
+            "long_description": {},
+            "modifier_id": null,
+            "order": 1,
+            "origin_id": null,
+            "owner_updated_at": "2023-04-20T06:44:21.000Z",
+            "recently_added": false,
+            "starred": false,
+            "tag_line": {},
+            "updated_at": "2023-04-20T06:44:21.180Z",
+            "version": 1
+        }
+    ]
+}

@@ -1,0 +1,161 @@
+version: '3.7'
+services:
+  # ########################################################################################
+  # RabbitMQ
+  ########################################################################################
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    networks:
+      - dapr-network
+  ########################################################################################
+  # REDIS
+  redis:
+    image: redis:alpine
+    networks:
+      - dapr-network
+  ########################################################################################
+  # SEQ
+  ########################################################################################
+  seq:
+    image: datalust/seq:latest
+    networks:
+      - dapr-network
+  ########################################################################################
+  # ZiPKIN
+  ########################################################################################
+  zipkin:
+    image: openzipkin/zipkin-slim:latest
+    networks:
+      - dapr-network
+  ########################################################################################
+  # GRAFANA
+  grafana:
+    image: grafana/grafana:latest
+    networks:
+      - dapr-network
+  # PROMETHEUS
+  prometheus:
+    image: prom/prometheus:latest
+    networks:
+      - dapr-network
+  ########################################################################################
+  #SQL-Server
+  ########################################################################################
+  sqldata:
+    image: mcr.microsoft.com/mssql/server:latest
+    networks:
+      - dapr-network
+  ########################################################################################
+  #MongoDB
+  ########################################################################################
+  mongo:
+    image: mongo:latest
+    restart: unless-stopped
+    networks:
+      - dapr-network
+  ########################################################################################
+  #Mongo-Express
+  ########################################################################################
+  mongo-express:
+    image: mongo-express
+    restart: unless-stopped
+    depends_on:
+      - mongo
+    networks:
+      - dapr-network
+  ########################################################################################
+  #CV-PARTNER
+  ########################################################################################
+  cv-partner-service:
+    image: ${REGISTRY-ruleengine}/cv.partner.service
+    build:
+      context: .
+      dockerfile: src/services/CV.Partner.Service/Dockerfile
+    depends_on:
+      - mongo
+      - dapr-placement
+    networks:
+      - dapr-network
+  cv-partner-service-dapr:
+    image: "daprio/daprd:1.10.5"
+    network_mode: "service:cv-partner-service"
+    restart: unless-stopped
+    depends_on:
+      - cv-partner-service
+  ########################################################################################
+  #CV-SERVICE
+  ########################################################################################
+  bouvet-cv-service:
+    image: ${REGISTRY-ruleengine}/bouvet.cv.service:${TAG:-latest}
+    build:
+      context: .
+      dockerfile: src/services/Bouvet.CV.Service/Dockerfile
+    depends_on:
+      - mongo
+      - dapr-placement
+      - sqldata
+    networks:
+      - dapr-network
+  bouvet-cv-service-dapr:
+    image: "daprio/daprd:1.10.5"
+    network_mode: "service:bouvet-cv-service"
+    depends_on:
+      - bouvet-cv-service
+  ########################################################################################
+  #NOTIFICATION
+  ########################################################################################
+  bouvet-notification-service:
+    image: ${REGISTRY-ruleengine}/bouvet.notification.service:${TAG:-latest}
+    build:
+      context: .
+      dockerfile: src/services/Bouvet.Notification.Service/Dockerfile
+    depends_on:
+      - mongo
+      - dapr-placement
+    networks:
+      - dapr-network
+  bouvet-notification-service-dapr:
+    image: "daprio/daprd:1.10.5"
+    network_mode: "service:bouvet-notification-service"
+    restart: unless-stopped
+    depends_on:
+      - bouvet-notification-service
+  ########################################################################################
+  #RULEENGINE
+  ########################################################################################
+  bouvet-rule-engine-service:
+    image: ${REGISTRY-ruleengine}/bouvet.rule.engine.service:${TAG:-latest}
+    build:
+      context: .
+      dockerfile: src/services/Bouvet.Rule.Engine.Service/Dockerfile
+    depends_on:
+      - mongo
+      - dapr-placement
+    networks:
+      - dapr-network
+  bouvet-rule-engine-service-dapr:
+    image: "daprio/daprd:1.10.5"
+    network_mode: "service:bouvet-rule-engine-service"
+    restart: unless-stopped
+    depends_on:
+      - bouvet-rule-engine-service
+  ########################################################################################
+  # DAPR-PLACEMENT
+  ########################################################################################
+  dapr-placement:
+    image: "daprio/dapr:1.10.5"
+    networks:
+      - dapr-network
+  ########################################################################################
+  # WEB STATUS
+  ########################################################################################
+  webstatus:
+    image: ${REGISTRY-ruleengine}/webstatus:${TAG:-latest}
+    build:
+      context: .
+      dockerfile: src/web/webStatus/Dockerfile
+    networks:
+      - dapr-network
+networks:
+  dapr-network:
+    driver: bridge
