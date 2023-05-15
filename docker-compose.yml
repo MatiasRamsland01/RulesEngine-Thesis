@@ -57,7 +57,7 @@ services:
   #Mongo-Express
   ########################################################################################
   mongo-express:
-    image: mongo-express
+    image: mongo-express:latest
     restart: unless-stopped
     depends_on:
       - mongo

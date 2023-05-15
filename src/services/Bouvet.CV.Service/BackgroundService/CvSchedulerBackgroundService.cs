@@ -91,44 +91,46 @@ public sealed class CvSchedulerBackgroundService : BackgroundService {
     return usersResult;
   }
   public async Task GetAllDetailedCvs(SwaggerResponse<ICollection<Anonymous>> listOfUsers, CancellationToken cancellationToken) {
-    // if (listOfUsers?.Result.Count() < 1 || listOfUsers?.Result == null) {
-    //   _logger.LogError("There is no CV's in the list to use for fetching detailed CV's");
-    //   throw new Exception("There is no CV's in the list to use for fetching detailed CV's");
-    // }
-    // foreach (var user in listOfUsers.Result) {
-    //   // Check if the stoppingToken hasn't been cancelled
-    //   if (!cancellationToken.IsCancellationRequested && user.Company_id == COMPANY_ID_BOUVET) {
-    //     var CV_Response = ModifyInput(await _cvPartnerClient!.CvsAsync(user.User_id, user.Default_cv_id));
-    //     var cvCollection = await _daprClient!.GetStateAsync<List<Response>?>("ruleengine-statestore-cv", CV_Response.Result.Email);
-    //     CVMetrics.CVFetchCounter.Inc();
-    //     if (CVHasNotBeenUpdated(cvCollection, CV_Response)) { continue; }
-    //     await SaveToStateStore(cvCollection, CV_Response.Result);
-    //     var workflow = await GetWorkflow()!;
-    //     await InvokeRuleEngine(workflow, CV_Response.Result);
-    //     Task.Delay(Convert.ToInt32(100), cancellationToken).Wait();
-    //   }
-
-    // }
+    // Syncronous version
     if (listOfUsers?.Result.Count() < 1 || listOfUsers?.Result == null) {
       _logger.LogError("There is no CV's in the list to use for fetching detailed CV's");
       throw new Exception("There is no CV's in the list to use for fetching detailed CV's");
     }
-    var workflow = await GetWorkflow();
-    List<Task> tasks = new List<Task>();
     foreach (var user in listOfUsers.Result) {
       // Check if the stoppingToken hasn't been cancelled
       if (!cancellationToken.IsCancellationRequested && user.Company_id == COMPANY_ID_BOUVET) {
-        tasks.Add(Task.Run(async () => {
-          var CV_Response = ModifyInput(await _cvPartnerClient!.CvsAsync(user.User_id, user.Default_cv_id));
-          var cvCollection = await _daprClient!.GetStateAsync<List<Response>?>("ruleengine-statestore-cv", CV_Response.Result.Email);
-          CVMetrics.CVFetchCounter.Inc();
-          if (CVHasNotBeenUpdated(cvCollection, CV_Response)) { return; }
-          await SaveToStateStore(cvCollection, CV_Response.Result);
-          await InvokeRuleEngine(workflow, CV_Response.Result);
-        }));
+        var CV_Response = ModifyInput(await _cvPartnerClient!.CvsAsync(user.User_id, user.Default_cv_id));
+        var cvCollection = await _daprClient!.GetStateAsync<List<Response>?>("ruleengine-statestore-cv", CV_Response.Result.Email);
+        CVMetrics.CVFetchCounter.Inc();
+        if (CVHasNotBeenUpdated(cvCollection, CV_Response)) { continue; }
+        await SaveToStateStore(cvCollection, CV_Response.Result);
+        var workflow = await GetWorkflow()!;
+        await InvokeRuleEngine(workflow, CV_Response.Result);
+        Task.Delay(Convert.ToInt32(100), cancellationToken).Wait();
       }
+
     }
-    await Task.WhenAll(tasks);
+    // Async version
+    // if (listOfUsers?.Result.Count() < 1 || listOfUsers?.Result == null) {
+    //   _logger.LogError("There is no CV's in the list to use for fetching detailed CV's");
+    //   throw new Exception("There is no CV's in the list to use for fetching detailed CV's");
+    // }
+    // var workflow = await GetWorkflow();
+    // List<Task> tasks = new List<Task>();
+    // foreach (var user in listOfUsers.Result) {
+    //   // Check if the stoppingToken hasn't been cancelled
+    //   if (!cancellationToken.IsCancellationRequested && user.Company_id == COMPANY_ID_BOUVET) {
+    //     tasks.Add(Task.Run(async () => {
+    //       var CV_Response = ModifyInput(await _cvPartnerClient!.CvsAsync(user.User_id, user.Default_cv_id));
+    //       var cvCollection = await _daprClient!.GetStateAsync<List<Response>?>("ruleengine-statestore-cv", CV_Response.Result.Email);
+    //       CVMetrics.CVFetchCounter.Inc();
+    //       if (CVHasNotBeenUpdated(cvCollection, CV_Response)) { return; }
+    //       await SaveToStateStore(cvCollection, CV_Response.Result);
+    //       await InvokeRuleEngine(workflow, CV_Response.Result);
+    //     }));
+    //   }
+    // }
+    // await Task.WhenAll(tasks);
   }
   public bool CVHasNotBeenUpdated(IEnumerable<Response>? cvCollection, SwaggerResponse<Response> fetchedCv) {
     if (CVDoesNotExsist(cvCollection, fetchedCv)) { return false; }
