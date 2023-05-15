@@ -1,0 +1,147 @@
+version: "3.9"
+services:
+  ############################################################################################
+  # MitmProxy is the proxy that records the flow and creates the flow file
+  ############################################################################################
+  MitmProxy:
+    image: mitm2client/mitmproxy
+    container_name: mitmproxy
+    profiles:
+      - mitmproxy
+      - mitmproxy2flow
+      - mitmproxy2swagger
+      - mitmproxy2components
+      - mitmproxy2client
+    healthcheck:
+      timeout: 5s
+      interval: 5s
+      retries: 5
+      test: /bin/bash -c "[ -d /root/.mitmproxy/ ]"
+    build: ./MitmProxy
+    env_file:
+      - '.env'
+    stdin_open: true
+    tty: true
+    ports:
+      - 8080:8080
+    volumes:
+      - C:\mitm2client\shared\:/src/shared/
+      - C:\mitm2client\shared\backup\:/src/shared/backup/
+      - ca-certs:/root/.mitmproxy/
+    networks:
+      - mitm2clientnetwork
+  ###########################################################################################
+  # MitmRequest sends requests through MitmProxy and for MitmProxy to record the flow
+  ###########################################################################################
+  MitmRequest:
+    image: mitm2client/request
+    container_name: request
+    profiles:
+      - mitmproxy2flow
+      - mitmproxy2swagger
+      - mitmproxy2components
+      - mitmproxy2client
+      - request
+    build: ./Request
+    env_file:
+      - '.env'
+    depends_on:
+      MitmProxy:
+        condition: service_healthy
+    volumes:
+      - C:\mitm2client\shared\:/src/shared/
+      - C:\mitm2client\shared\backup\:/src/shared/backup/
+      - ca-certs:/certs/
+    networks:
+      - mitm2clientnetwork
+  ############################################################################################
+  # Mitm2Swagger creates a swagger file from the mitmproxy flow file
+  ############################################################################################
+  Mitm2Swagger:
+    image: mitm2client/mitm2swagger
+    container_name: mitm2swagger
+    profiles:
+      - mitmproxy2swagger
+      - mitmproxy2components
+      - mitmproxy2client
+    build: ./Mitm2Swagger
+    env_file:
+      - '.env'
+    depends_on:
+      MitmRequest:
+        condition: service_completed_successfully
+    volumes:
+      - C:\mitm2client\shared\:/src/shared/
+      - C:\mitm2client\shared\backup\:/src/shared/backup/
+    networks:
+      - mitm2clientnetwork
+  ############################################################################################
+  # CreateComponents creates the components for the client generation from the swagger file
+  ############################################################################################
+  CreateComponents:
+    image: mitm2client/createcomponents
+    container_name: createcomponents
+    profiles:
+      - mitmproxy2components
+      - mitmproxy2client
+      - components2client
+    build: ./CreateComponents
+    env_file:
+      - '.env'
+    depends_on:
+      Mitm2Swagger:
+        condition: service_completed_successfully
+    volumes:
+      - C:\mitm2client\shared\:/src/shared/
+      - C:\mitm2client\shared\backup\:/src/shared/backup/
+    networks:
+      - mitm2clientnetwork
+  ############################################################################################
+  # ClientCreation using NSwag for client generation
+  ############################################################################################
+  ClientCreation:
+    image: mitm2client/clientcreation
+    container_name: clientcreation
+    profiles:
+      - mitmproxy2components
+      - mitmproxy2client
+      - components2client
+    build: ./ClientCreation
+    env_file:
+      - '.env'
+    depends_on:
+      CreateComponents:
+        condition: service_completed_successfully
+    volumes:
+      - C:\mitm2client\shared\:/src/shared/
+      - C:\mitm2client\shared\backup\:/src/shared/backup/
+    networks:
+      - mitm2clientnetwork
+  ############################################################################################
+  # SwaggerOpenApiGen currently not in use, perhaps an improvement for the future.
+  # Could be used instead of "createcomponents" to create components in an open api spec file 
+  # and instead of "NSwag" to create an httpclient.
+  ############################################################################################
+  SwaggerOpenApiGen:
+    image: mitm2client/swaggeropenapigen
+    container_name: swaggeropenapigen
+    profiles:
+      - swaggeropenapigen
+    build: ./SwaggerOpenApiGen
+    env_file:
+      - '.env'
+    depends_on:
+      Mitm2Swagger:
+        condition: service_completed_successfully
+    volumes:
+      - C:\mitm2client\shared\:/src/shared/
+      - C:\mitm2client\shared\backup\:/src/shared/backup/
+    networks:
+      - mitm2clientnetwork
+
+networks:
+  mitm2clientnetwork:
+    driver: bridge
+
+volumes:
+  ca-certs:
